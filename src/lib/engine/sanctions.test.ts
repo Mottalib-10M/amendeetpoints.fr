@@ -142,3 +142,24 @@ import { majoreeReduite } from './sanctions';
 describe('majorée réduite', () => {
   it('375 € → 300 €, 180 € → 144 €', () => { expect(majoreeReduite(375)).toBe(300); expect(majoreeReduite(180)).toBe(144); });
 });
+import { apresFlash, etatAttente, reevaluation, fpsMajore } from './sanctions';
+describe('après un flash (Service Public F364)', () => {
+  it('avis attendu de J+10 à 1 mois, prescription à 1 an', () => {
+    expect(apresFlash('2026-10-01')).toEqual({ avisDes: '2026-10-11', avisJusqua: '2026-11-01', prescription: '2027-10-01' });
+    expect(etatAttente('2026-10-01', '2026-10-05')).toBe('tot');
+    expect(etatAttente('2026-10-01', '2026-11-01')).toBe('normal');
+    expect(etatAttente('2026-10-01', '2027-09-30')).toBe('retard');
+    expect(etatAttente('2026-10-01', '2027-10-01')).toBe('prescrit');
+  });
+});
+describe('amende majorée sans avis (Service Public F18510)', () => {
+  it('3 mois pour justifier, 45 jours pour payer', () => {
+    expect(reevaluation('2026-10-01', '2026-10-20')).toEqual({ justifierAvant: '2027-01-01', payerAvant: '2026-12-04' });
+  });
+});
+describe('FPS impayé (Service Public F34440)', () => {
+  it('majoration de 20 %, au moins 50 €, réduite de 20 % sous un mois', () => {
+    expect(fpsMajore(35)).toEqual({ majoration: 50, total: 85, totalReduit: 75 });
+    expect(fpsMajore(300)).toEqual({ majoration: 60, total: 360, totalReduit: 348 });
+  });
+});

@@ -232,3 +232,39 @@ export function probatoire(moisDepuis: number, aac: boolean, retraits: Array<{ m
 
 /** Amende majorée payée dans les 30 jours de l'envoi de son avis (45 en ligne) : réduite de 20 % (fiche F18509). */
 export const majoreeReduite = (majoree: number) => Math.round(majoree * (1 - P.delais.majoree_reduction_pct) * 100) / 100;
+
+/** Après un flash : fenêtre habituelle de réception de l'avis et prescription d'une contravention
+ *  (fiche Service Public F364 : 10 jours à 1 mois en moyenne ; 1 an sans avis = plus de poursuite). */
+export function apresFlash(flash: string) {
+  const D = P.delais;
+  return {
+    avisDes: addDays(flash, D.avis_envoi_moyen_jours_min),
+    avisJusqua: addMonths(flash, D.avis_envoi_moyen_mois_max),
+    prescription: addYears(flash, D.prescription_contravention_ans),
+  };
+}
+/** État de l'attente d'un avis, `aDate` étant le jour où l'on regarde. */
+export function etatAttente(flash: string, aDate: string): 'tot' | 'normal' | 'retard' | 'prescrit' {
+  const f = apresFlash(flash);
+  return aDate < f.avisDes ? 'tot' : aDate <= f.avisJusqua ? 'normal' : aDate < f.prescription ? 'retard' : 'prescrit';
+}
+
+/** Amende majorée reçue sans l'avis initial, radar automatique (fiche Service Public F18510) :
+ *  justifier du changement d'adresse dans les 3 mois de l'envoi de l'avis majoré, puis payer
+ *  l'amende forfaitaire (sans minoration) dans les 45 jours de la déclaration. */
+export function reevaluation(envoiMajoree: string, declaration: string | null) {
+  const D = P.delais;
+  return {
+    justifierAvant: addMonths(envoiMajoree, D.reevaluation_adresse_mois),
+    payerAvant: declaration ? addDays(declaration, D.reevaluation_paiement_jours) : null,
+  };
+}
+
+/** Forfait post-stationnement impayé après 3 mois : majoration de 20 %, au moins 50 €, réduite de
+ *  20 % si tout est payé dans le mois de l'avertissement (fiche Service Public F34440). */
+export function fpsMajore(fps: number) {
+  const F = P.fps;
+  const majoration = Math.max(Math.round(fps * F.majoration_pct * 100) / 100, F.majoration_min);
+  const majorationReduite = Math.round(majoration * (1 - F.reduction_majoration_pct) * 100) / 100;
+  return { majoration, total: fps + majoration, totalReduit: fps + majorationReduite };
+}

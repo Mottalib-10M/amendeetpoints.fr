@@ -17,7 +17,7 @@ export default defineGuide({
     card: 'Délit dès le premier dépassement : 300 € ou tribunal, 6 points, confiscation.',
     title: 'Grand excès de vitesse : délit, 300 € et 6 points en 2026',
     description: 'Grand excès de vitesse de 50 km/h ou plus : délit dès la première fois, amende forfaitaire délictuelle de 300 €, 3 750 € au tribunal, 6 points, confiscation.',
-    h1: 'Grand excès de vitesse : un délit dès la première fois',
+    h1: 'Grand excès de vitesse supérieur à 50 km/h : un délit dès la première fois',
     intro: 'Depuis la fin de décembre 2025, dépasser la limite de 50 km/h ou plus n’est plus une contravention de 5e classe : c’est un délit, inscrit au casier.',
     resume: (h) => {
       const e = ex(h);

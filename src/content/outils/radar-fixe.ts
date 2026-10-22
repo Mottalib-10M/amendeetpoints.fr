@@ -10,7 +10,7 @@ export default defineGuide({
   order: 2,
   tool: 'radars',
   outil: { defaultDep: '60', defaultType: 'ETT' },
-  related: ['carte-radars', 'radar-troncon', 'amende-feu-rouge', 'marge-erreur-radar', 'exces-20-km-h'],
+  related: ['carte-radars', 'flash-radar-delai', 'radar-troncon', 'amende-feu-rouge', 'marge-erreur-radar'],
   sources: ['radarsDataset', 'radarsCarte', 'arreteCinemometres', 'r412_30'],
   fr: {
     slug: 'radar-fixe',

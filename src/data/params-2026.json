@@ -16,8 +16,11 @@
     "forfaitaire_jours": 45,
     "forfaitaire_telepaiement_jours": 60,
     "contestation_forfaitaire_jours": 45,
-    "contestation_majoree_jours": 30, "contestation_majoree_recommande_mois": 3, "majoree_reduction_pct": 0.2, "majoree_reduction_jours": 30, "majoree_reduction_telepaiement_jours": 45
+    "contestation_majoree_jours": 30, "contestation_majoree_recommande_mois": 3, "majoree_reduction_pct": 0.2, "majoree_reduction_jours": 30, "majoree_reduction_telepaiement_jours": 45,
+    "avis_envoi_moyen_jours_min": 10, "avis_envoi_moyen_mois_max": 1, "prescription_contravention_ans": 1, "reevaluation_adresse_mois": 3, "reevaluation_paiement_jours": 45, "rappel_recherche_ans": 1
   },
+  "fps": { "paiement_mois": 3, "majoration_pct": 0.2, "majoration_min": 50, "reduction_majoration_pct": 0.2, "reduction_majoration_mois": 1,
+    "paris_lourds": { "depuis": "2024-10-01", "masse_kg": 1600, "masse_electrique_kg": 2000, "zone1": 225, "zone2": 150, "zone1_minore": 157.5, "zone2_minore": 105, "minore_jours": 9 } },
   "marge": {
     "seuil_kmh": 100,
     "fixe_kmh": 5,
@@ -146,6 +149,12 @@
     "spFps": { "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34440", "label": { "fr": "Service Public : forfait post-stationnement en cas de stationnement non payé", "en": "Service Public: post-parking charge (FPS) for unpaid parking" } },
     "spEtranger": { "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F414", "label": { "fr": "Service Public : amende d'un étranger en cas d'infraction routière en France (vérifié le 14 octobre 2026)", "en": "Service Public: fines for foreign drivers in France (checked 14 October 2026)" } },
     "spEntreprise": { "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31882", "label": { "fr": "Service Public : véhicule d'entreprise flashé par un radar", "en": "Service Public: company vehicle caught by a speed camera" } },
+    "spFlash": { "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F364", "label": { "fr": "Service Public : que faire si l'on ne reçoit pas d'avis de contravention après un flash radar ? (vérifié le 16 octobre 2025, consulté le 22 octobre 2026)", "en": "Service Public: no penalty notice after a speed camera flash (checked 16 October 2025, read 22 October 2026)" } },
+    "spMajoreeSansAvis": { "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18510", "label": { "fr": "Service Public : contester une amende majorée sans avoir reçu l'avis de contravention (vérifié le 24 juin 2025, consulté le 22 octobre 2026)", "en": "Service Public: increased fine received without the first notice (checked 24 June 2025, read 22 October 2026)" } },
+    "parisPeriph": { "url": "https://www.paris.fr/pages/50-km-h-sur-le-peripherique-la-mesure-mise-en-place-le-1er-octobre-28673", "label": { "fr": "Ville de Paris : 50 km/h sur le périphérique, mise en place à partir du 1er octobre 2024 (mis à jour le 4 octobre 2024, consulté le 22 octobre 2026)", "en": "City of Paris: 50 km/h on the ring road from 1 October 2024 (updated 4 October 2024, read 22 October 2026)" } },
+    "parisFpsPoids": { "url": "https://cdn.paris.fr/paris/2024/05/06/dvd-43-pj-NAS9.PDF", "label": { "fr": "Ville de Paris : délibération 2024 DVD 43-1, tarification du stationnement au poids des véhicules, article 5 (FPS de 225 € et 150 €), consultée le 22 octobre 2026", "en": "City of Paris: deliberation 2024 DVD 43-1, weight-based parking charges, article 5 (FPS of €225 and €150), read 22 October 2026" } },
+    "parisFpsDate": { "url": "https://cdn.paris.fr/paris/2024/09/18/2024-dvd-110-delib-ouKM.pdf", "label": { "fr": "Ville de Paris : délibération 2024 DVD 110, entrée en vigueur de la tarification au poids le 1er octobre 2024 et seuil de 2 tonnes, consultée le 22 octobre 2026", "en": "City of Paris: deliberation 2024 DVD 110, weight-based charges in force from 1 October 2024, 2-tonne threshold, read 22 October 2026" } },
+    "parisVote": { "url": "https://www.paris.fr/pages/plus-ou-moins-de-suv-les-parisiens-et-parisiennes-sont-invites-a-voter-le-4-fevrier-25381", "label": { "fr": "Ville de Paris : tarification des véhicules lourds adoptée, à partir du 1er octobre 2024, hors résidents (consulté le 22 octobre 2026)", "en": "City of Paris: heavy-vehicle parking charges adopted, from 1 October 2024, residents excluded (read 22 October 2026)" } },
     "antai": { "url": "https://www.antai.gouv.fr/", "label": { "fr": "ANTAI : paiement, désignation et contestation des avis de contravention", "en": "ANTAI: paying, designating the driver and contesting French fines" } },
     "radarsDataset": { "url": "https://www.data.gouv.fr/datasets/liste-des-radars-fixes-en-france", "label": { "fr": "data.gouv.fr : Liste des radars fixes en France (ministère de l'Intérieur, Licence Ouverte 2.0)", "en": "data.gouv.fr: list of fixed speed cameras in France (Interior Ministry, Licence Ouverte 2.0)" } },
     "radarsCarte": { "url": "https://radars.securite-routiere.gouv.fr/", "label": { "fr": "Sécurité routière : carte officielle des radars", "en": "French road safety agency: official camera map" } },
