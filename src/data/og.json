@@ -1,0 +1,20 @@
+{
+ "accent": "#A3271D",
+ "symbol": "km/h",
+ "variants": [
+  {
+   "file": "og-fr.png",
+   "title": "Amende et points\nde votre excès de vitesse",
+   "subtitle": "Vitesse retenue · Amende · Points · Radars",
+   "badge": "Code de la route en vigueur, relu en octobre 2026",
+   "brand": "Amende et Points"
+  },
+  {
+   "file": "og-en.png",
+   "title": "French speeding fine\nand points, exactly",
+   "subtitle": "Recorded speed · Fine · Points · Cameras",
+   "badge": "French Highway Code, checked October 2026",
+   "brand": "Amende et Points"
+  }
+ ]
+}

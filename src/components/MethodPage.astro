@@ -1,0 +1,90 @@
+---
+/** Méthode et sources (page de confiance, RECETTE §8.2) : textes appliqués, choix de calcul, radars, tests, limites, mises à jour. */
+import PageLayout from '../layouts/PageLayout.astro';
+import { route, type Locale } from '../i18n/routes';
+import { P } from '../lib/engine/params';
+import * as M from '../lib/engine/index';
+import { formatMoney, formatNumber, displayDate } from '../lib/format';
+import { breadcrumbSchema, webPageSchema } from '../lib/seo';
+import { CONTACT_EMAIL } from '../data/site-config';
+import S from '../data/radars/stats.json';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const fr = lang === 'fr';
+const tag = fr ? 'fr-FR' : 'en-GB';
+const $ = (n: number) => formatMoney(n, 0, lang);
+const n0 = (x: number) => formatNumber(x, 0, lang);
+const d = (iso: string) => displayDate(iso, tag);
+const title = fr ? 'Méthode : comment l’amende et les points sont calculés' : 'Method: how the fine and the points are worked out';
+const description = fr ? 'Méthode du calculateur : marge des radars, arrondi, barème de l’article R413-14, délit L413-1, délais de paiement, retour des points, fichier des radars, tests.' : 'How the calculator works: camera margin, rounding, the R413-14 scale, the L413-1 offence, payment deadlines, points recovery, the camera file and the tests.';
+const h1 = fr ? 'Méthode et sources' : 'Method and sources';
+const path = route('method', lang);
+const sources = Object.values(P.sources);
+const ex1 = M.sanctionVitesse(97, 80);
+const ex2 = M.sanctionVitesse(136, 110);
+const ex3 = M.sanctionVitesse(137, 80);
+const ex4 = M.echeances('2026-10-01', false);
+const m = S.meta, N = S.national;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: h1, description, path, lang }), breadcrumbSchema([{ name: fr ? 'Accueil' : 'Home', path: route('home', lang) }, { name: h1, path }])]} breadcrumbs={[{ label: h1 }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1></header>
+  {fr ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Le calculateur applique des textes, pas des moyennes : le Code de la route, le Code de procédure pénale et l’arrêté qui encadre les cinémomètres, dans leur version en vigueur relue sur Légifrance le {d(P.retrieved_at)}. Chaque montant, chaque nombre de points et chaque délai vient du fichier <code>src/data/params-2026.json</code>, qui porte pour chaque valeur l’article d’où elle sort. Aucune page ne tape un chiffre à la main.</p>
+    <h2>De la vitesse mesurée à la vitesse retenue</h2>
+    <p>Un radar ne verbalise pas la vitesse qu’il mesure. L’article 6 de l’arrêté du 4 juin 2009 fixe l’erreur maximale tolérée : {n0(P.marge.fixe_kmh)} km/h en dessous de {n0(P.marge.seuil_kmh)} km/h et {n0(P.marge.fixe_pct * 100)} % au-dessus pour un appareil fixe ; {n0(P.marge.embarque_kmh)} km/h et {n0(P.marge.embarque_pct * 100)} % pour un appareil utilisé en mouvement (voiture radar). Cette marge est déduite de la vitesse mesurée. Le résultat est ensuite arrondi à l’unité inférieure : c’est notre choix, le plus favorable au conducteur et conforme aux avis que nous avons pu lire, mais aucun texte ne fixe l’arrondi. Sur l’avis, c’est toujours la vitesse retenue imprimée qui compte ; l’outil accepte donc les deux chiffres.</p>
+    <p>Exemple : {n0(ex1.mesuree)} km/h mesurés sur une route à {n0(ex1.limite)} donnent {n0(ex1.retenue)} km/h retenus, un excès de {n0(ex1.exces)} km/h, {$(ex1.amendes!.forfaitaire)} et {n0(ex1.points)} point. {n0(ex2.mesuree)} km/h sur une voie à {n0(ex2.limite)} donnent {n0(ex2.retenue)} km/h retenus et {n0(ex2.points)} points.</p>
+    <h2>Le barème de l’excès</h2>
+    <p>L’article R413-14, dans sa rédaction issue du décret n° 2023-1150, classe l’excès inférieur à 20 km/h en 3e classe si la limite dépasse 50 km/h, en 4e classe sinon ; tout excès de 20 km/h ou plus est de 4e classe. Points : aucun sous 5 km/h, puis 1, 2, 3 et 4 points pour les tranches de 5, 20, 30 et 40 km/h. À partir de 30 km/h, le juge peut suspendre le permis jusqu’à trois ans. Depuis la fin de décembre 2025 (loi du 9 juillet 2025 et décret n° 2025-1269), l’excès de 50 km/h ou plus est un délit (article L413-1) : trois mois d’emprisonnement et {$(P.vitesse.delit.amende_max)} d’amende encourus, {n0(P.vitesse.delit.points)} points, et une amende forfaitaire délictuelle de {$(P.vitesse.delit.afd.forfaitaire)} ({$(P.vitesse.delit.afd.minoree)} minorée, {$(P.vitesse.delit.afd.majoree)} majorée). Exemple : {n0(ex3.mesuree)} km/h mesurés sur une route à {n0(ex3.limite)} donnent {n0(ex3.retenue)} retenus, donc le délit.</p>
+    <h2>Montants et délais</h2>
+    <p>Les montants par classe viennent de l’article R49-9 du Code de procédure pénale et de la fiche Service Public sur l’amende forfaitaire : 2e classe {$(P.classes['2'].forfaitaire)}, 3e classe {$(P.classes['3'].forfaitaire)}, 4e classe {$(P.classes['4'].forfaitaire)}. La minorée se paie dans les {n0(P.delais.minoree_jours)} jours de l’envoi de l’avis ({n0(P.delais.minoree_telepaiement_jours)} en ligne), la forfaitaire dans les {n0(P.delais.forfaitaire_jours)} jours ({n0(P.delais.forfaitaire_telepaiement_jours)} en ligne) ; au-delà, l’amende est majorée. Le stationnement n’a pas de minorée (article 529-7). Exemple : avis envoyé le 1er octobre 2026, minorée jusqu’au {d(ex4.minoree)}, forfaitaire jusqu’au {d(ex4.forfaitaire)}.</p>
+    <h2>Les points et leur retour</h2>
+    <p>L’outil des points applique l’article L223-6 : tous les points reviennent après deux ans sans nouvelle infraction, trois ans si l’une des infractions de la période est une contravention de 4e ou 5e classe ou un délit ; un point retiré seul revient après six mois sans nouvelle infraction ; un stage rend {n0(P.permis.stage_points)} points, une fois par an. Les délais partent du jour où le retrait devient définitif (paiement de l’amende, condamnation), que l’outil demande en mois. Le permis probatoire suit l’article L223-1 : {n0(P.permis.probatoire_initial)} points, puis un sixième du maximum par an (un quart après la conduite accompagnée), à condition qu’aucune infraction ayant retiré des points n’ait été commise depuis le début de la période.</p>
+    <h2>Les radars fixes</h2>
+    <p>La liste vient du jeu « Liste des radars fixes en France » du ministère de l’Intérieur, publié sur data.gouv.fr sous Licence Ouverte 2.0. Fichier lu : {m.nomFichier}, du {d(m.fichier)}, {n0(m.radars)} radars avec leur type, leur date de mise en service, la vitesse contrôlée et leurs coordonnées. Le script <code>scripts/update-data.mjs</code> rattache chaque radar à sa commune et à son département par l’API Découpage administratif ; {n0(m.sansCommune)} radars situés en mer au large de Menton n’ont pas de commune et ne comptent dans aucun département. La vitesse contrôlée manque pour les radars feu rouge et passage à niveau, et pour une partie des radars tourelles ({n0(N.types.ETT)} au total). Les radars mobiles, les voitures radars et les radars de chantier déplacés ne figurent pas dans ce fichier.</p>
+    <h2>Les tests</h2>
+    <p>Les exemples de cette page, les tranches du barème, la marge à 99 et 100 km/h, le délit à 50 km/h, les délais de paiement, le retour des points et le permis probatoire sont des tests (<code>src/lib/engine/sanctions.test.ts</code>), rejoués à chaque mise à jour. Un test qui échoue bloque la publication.</p>
+    <h2>Ce que le site ne fait pas</h2>
+    <ul>
+      <li>Il ne lit pas votre dossier : le solde de points est une estimation à partir de ce que vous saisissez ; seul le relevé officiel fait foi.</li>
+      <li>Il ne calcule pas la peine qu’un tribunal prononcerait : il donne le maximum encouru.</li>
+      <li>Il ne publie pas les prix des stages, libres et non publiés par l’administration, ni les sanctions que nous n’avons pas pu relire sur un texte en vigueur.</li>
+      <li>Il ne vend ni stage, ni conseil, ni assurance, et ne demande ni compte, ni e-mail, ni numéro.</li>
+    </ul>
+    <h2>Mises à jour</h2>
+    <p>Radars : chaque semaine, une tâche planifiée relit le jeu de données, refuse un fichier de moins de 2 000 radars, rejoue les tests, reconstruit et republie le site. Barème : à chaque modification d’un texte cité. Une erreur signalée à <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> est vérifiée sur la source, corrigée et transformée en test. Voir la <a href={route('editorial', lang)}>charte éditoriale</a>.</p>
+    <h2>Toutes les sources</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener" target="_blank">{s.label.fr}</a></li>)}</ul>
+    <p class="text-sm text-navy-600">Textes relus le <time datetime={P.retrieved_at}>{d(P.retrieved_at)}</time> · fichier des radars du <time datetime={m.fichier}>{d(m.fichier)}</time>.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>The calculator applies legal texts, not averages: the French Highway Code (Code de la route), the Code of Criminal Procedure and the order governing speed cameras, in the versions in force as reread on Légifrance on {d(P.retrieved_at)}. Every amount, number of points and deadline comes from <code>src/data/params-2026.json</code>, which records for each value the article it comes from. No page types a figure by hand.</p>
+    <h2>From measured speed to recorded speed</h2>
+    <p>A camera does not fine the speed it measures. Article 6 of the order of 4 June 2009 sets the maximum permitted error: {n0(P.marge.fixe_kmh)} km/h below {n0(P.marge.seuil_kmh)} km/h and {n0(P.marge.fixe_pct * 100)}% above it for a fixed device; {n0(P.marge.embarque_kmh)} km/h and {n0(P.marge.embarque_pct * 100)}% for a device used on the move (camera car). The margin is subtracted from the measured speed, then the result is rounded down to the unit: that is our choice, the most favourable to the driver and consistent with the notices we have seen, but no text sets the rounding. On the notice, the recorded speed printed is what counts, so the tool accepts either figure.</p>
+    <p>Example: {n0(ex1.mesuree)} km/h measured on an {n0(ex1.limite)} road gives {n0(ex1.retenue)} km/h recorded, {n0(ex1.exces)} km/h over, {$(ex1.amendes!.forfaitaire)} and {n0(ex1.points)} point. {n0(ex2.mesuree)} km/h on a {n0(ex2.limite)} road gives {n0(ex2.retenue)} km/h recorded and {n0(ex2.points)} points.</p>
+    <h2>The speeding scale</h2>
+    <p>Article R413-14, as worded since decree 2023-1150, puts speeding under 20 km/h over in class 3 when the limit is above 50 km/h and class 4 otherwise; anything 20 km/h over or more is class 4. Points: none under 5 km/h over, then 1, 2, 3 and 4 points from 5, 20, 30 and 40 km/h over. From 30 km/h over, a court may suspend the licence for up to three years. Since the end of December 2025 (law of 9 July 2025 and decree 2025-1269), 50 km/h over or more is a criminal offence (article L413-1): up to three months in prison and a {$(P.vitesse.delit.amende_max)} fine, {n0(P.vitesse.delit.points)} points, and a fixed criminal fine of {$(P.vitesse.delit.afd.forfaitaire)} ({$(P.vitesse.delit.afd.minoree)} reduced, {$(P.vitesse.delit.afd.majoree)} increased). Example: {n0(ex3.mesuree)} km/h measured on an {n0(ex3.limite)} road gives {n0(ex3.retenue)} recorded, hence the offence.</p>
+    <h2>Amounts and deadlines</h2>
+    <p>Amounts per class come from article R49-9 of the Code of Criminal Procedure and the Service Public page on fixed fines: class 2 {$(P.classes['2'].forfaitaire)}, class 3 {$(P.classes['3'].forfaitaire)}, class 4 {$(P.classes['4'].forfaitaire)}. The reduced fine is paid within {n0(P.delais.minoree_jours)} days of the notice being sent ({n0(P.delais.minoree_telepaiement_jours)} online), the standard one within {n0(P.delais.forfaitaire_jours)} days ({n0(P.delais.forfaitaire_telepaiement_jours)} online); after that it is increased. Parking has no reduced rate (article 529-7). Example: notice sent on 1 October 2026, reduced until {d(ex4.minoree)}, standard until {d(ex4.forfaitaire)}.</p>
+    <h2>Points and getting them back</h2>
+    <p>The points tool applies article L223-6: all points return after two years with no new offence, three years if any offence in the period is a class 4 or 5 fine or a criminal offence; a single point returns after six months with no new offence; a course gives back {n0(P.permis.stage_points)} points, once a year. Time runs from when the deduction becomes final (fine paid, conviction), which the tool asks for in months. The probationary licence follows article L223-1: {n0(P.permis.probatoire_initial)} points, then one sixth of the maximum each year (a quarter after accompanied driving), provided no offence costing points has been committed since the start of the period.</p>
+    <h2>Fixed cameras</h2>
+    <p>The list comes from the “Liste des radars fixes en France” dataset of the Interior Ministry, published on data.gouv.fr under the Licence Ouverte 2.0. File read: {m.nomFichier}, dated {d(m.fichier)}, {n0(m.radars)} cameras with type, installation date, speed checked and coordinates. The script <code>scripts/update-data.mjs</code> attaches each camera to its town and département through the government’s administrative boundaries API; {n0(m.sansCommune)} cameras at sea off Menton have no town and count in no département. The speed checked is missing for red-light and level-crossing cameras and for some tower cameras ({n0(N.types.ETT)} in all). Mobile units, camera cars and relocatable roadworks cameras are not in this file.</p>
+    <h2>Tests</h2>
+    <p>The examples on this page, the scale bands, the margin at 99 and 100 km/h, the offence at 50 km/h over, the payment deadlines, points recovery and the probationary licence are tests (<code>src/lib/engine/sanctions.test.ts</code>), rerun at every update. A failing test blocks publication.</p>
+    <h2>What the site does not do</h2>
+    <ul>
+      <li>It does not read your record: the points balance is an estimate from what you enter; only the official record is binding.</li>
+      <li>It does not predict what a court would decide: it gives the maximum penalty.</li>
+      <li>It does not publish course prices, which are free and not published by the authorities, nor penalties we could not check against a text in force.</li>
+      <li>It sells no course, advice or insurance, and asks for no account, email or phone number.</li>
+    </ul>
+    <h2>Updates</h2>
+    <p>Cameras: every week, a scheduled job rereads the dataset, rejects a file with fewer than 2,000 cameras, reruns the tests, rebuilds and republishes the site. Penalty scale: whenever a cited text changes. An error reported to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> is checked against the source, fixed and turned into a test. See the <a href={route('editorial', lang)}>editorial policy</a>.</p>
+    <h2>All sources</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener" target="_blank">{s.label.en}</a></li>)}</ul>
+    <p class="text-sm text-navy-600">Texts reread on <time datetime={P.retrieved_at}>{d(P.retrieved_at)}</time> · camera file of <time datetime={m.fichier}>{d(m.fichier)}</time>.</p>
+  </div>
+  )}
+</PageLayout>

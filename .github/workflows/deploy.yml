@@ -1,0 +1,77 @@
+name: Amende et Points, relevé hebdomadaire des radars et déploiement
+
+# Le ministère de l'Intérieur publie la « Liste des radars fixes en France » sur data.gouv.fr
+# (Licence Ouverte 2.0), fréquence annoncée annuelle. Chaque lundi : relevé du fichier
+# (scripts/update-data.mjs, rattachement des nouveaux radars à leur commune par geo.api.gouv.fr,
+# cache dans scripts/data), tests du moteur, build, publication sur GitHub Pages ; les données
+# sont recommitées si elles ont changé.
+# Si le relevé échoue (fichier coupé, moins de 2 000 lignes, réseau), le script n'écrit rien : le site
+# garde le fichier précédent. Si un test échoue, rien n'est publié. Aucune clé d'API : données publiques.
+# Le barème (src/data/params-2026.json) ne se met pas à jour seul : il se relit sur Légifrance
+# à chaque changement de texte (voir CONTRIBUTING-DONNEES.md).
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+  schedule:
+    - cron: '40 4 * * 1'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+      - name: Relevé du fichier des radars fixes (data.gouv.fr)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: node scripts/update-data.mjs
+      - name: Tests du moteur
+        run: npx vitest run
+      - name: Build (avec contrôle des snippets)
+        run: npm run build
+      - name: Recommit des données si elles ont changé
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "releve-radars"
+          git config user.email "releve-radars@users.noreply.github.com"
+          git add src/data/radars public/data scripts/data
+          if ! git diff --cached --quiet; then
+            git commit -m "Radars fixes : relevé du $(date -u +%F)" && git push || echo "push refusé, relevé gardé pour le prochain passage"
+          fi
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Checkout (script IndexNow)
+        uses: actions/checkout@v4
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: bash scripts/indexnow.sh

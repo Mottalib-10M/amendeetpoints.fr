@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate, formatNumber } from '../../lib/format';
+import { P } from '../../lib/engine/params';
+import S from '../../data/radars/stats.json';
+const lang = 'fr';
+---
+<PageLayout title="Amende et Points : qui calcule votre sanction routière" description="Qui édite Amende et Points, pourquoi un calculateur neutre de l’amende et des points, d’où viennent le barème et les 3 309 radars, comment signaler une erreur." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Accueil', path: route('home', lang) }, { name: 'À propos', path: route('about', lang) }])]} breadcrumbs={[{ label: 'À propos' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">À propos d’Amende et Points</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Amende et Points est édité par Radif Partners. Il répond à la question que pose un avis de contravention ou un flash sur le bord de la route : combien vais-je payer, combien de points vais-je perdre, et quand les retrouverai-je ?</p>
+    <h2>Pourquoi ce site existe</h2>
+    <p>Sur ces questions, les premiers résultats sont des pages officielles qui exposent les règles sans faire le calcul, et des sites qui vendent des stages de récupération de points, du conseil juridique ou de l’assurance, avec un tableau à lire soi-même entre deux encarts. Les erreurs y sont fréquentes : un même petit excès annoncé à 68 € dans le texte et à 135 € dans la FAQ d’une même page, ou des barèmes qui ignorent encore le délit de grand excès de vitesse et la loi du 18 août 2026. Ce site fait mieux que le premier résultat Google parce qu’il calcule votre sanction exacte (vitesse retenue après la marge du radar, amende minorée, forfaitaire ou majorée, points, délit au-delà de 50 km/h, à jour de la loi du 18 août 2026) là où le premier résultat donne un tableau à lire soi-même entre des encarts de stages payants, et qu’il rattache chacun des {formatNumber(S.meta.radars, 0, 'fr')} radars fixes du fichier du ministère de l’Intérieur à son département et à sa limite.</p>
+    <h2>D’où viennent les chiffres</h2>
+    <p>Le barème vient des textes eux-mêmes : Code de la route (articles R413-14, L413-1, L223-1 à L223-6, L224-2), Code de procédure pénale (articles R49-9, 529-7 et suivants) et arrêté du 4 juin 2009 sur les cinémomètres, relus sur Légifrance le {displayDate(P.retrieved_at, 'fr-FR')}, recoupés avec les fiches de Service Public. Les radars viennent du fichier public du ministère de l’Intérieur sur data.gouv.fr, relu chaque semaine. Tout est détaillé dans la <a href={route('method', lang)}>méthode</a>.</p>
+    <h2>Ce que nous ne sommes pas</h2>
+    <p>Radif Partners n’est ni l’ANTAI, ni la Sécurité routière, ni un service de l’État, ni un cabinet d’avocats, ni un organisateur de stages. Nous ne vendons rien, ne touchons aucune commission, ne recommandons aucun prestataire et ne demandons aucune coordonnée. Seul l’avis de contravention reçu, ou la décision du juge, fait foi.</p>
+    <h2>Financement et données</h2><p>Le site est gratuit et sans inscription. Les calculs se font dans votre navigateur : la vitesse ou les dates que vous saisissez ne sont envoyées nulle part. S’il affiche un jour de la publicité, elle ne sera jamais placée au-dessus de l’outil, ne vendra ni stage ni défense, et ne sera pas présentée comme une recommandation.</p>
+    <h2>Une version anglaise</h2><p>Chaque page existe en anglais, pour les conducteurs étrangers flashés en France et les expatriés qui découvrent le permis à points : les termes de l’avis (vitesse retenue, amende minorée, désignation) y sont expliqués.</p>
+    <h2>Nous écrire</h2><p>Un montant qui ne correspond pas à votre avis, un radar disparu, un texte modifié : <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Voir aussi la <a href={route('editorial', lang)}>charte éditoriale</a> et les <a href={route('terms', lang)}>mentions légales</a>.</p>
+    <p class="text-sm text-navy-600">Textes relus le <time datetime={P.retrieved_at}>{displayDate(P.retrieved_at, 'fr-FR')}</time> · fichier des radars du <time datetime={S.meta.fichier}>{displayDate(S.meta.fichier, 'fr-FR')}</time>.</p>
+  </div>
+</PageLayout>

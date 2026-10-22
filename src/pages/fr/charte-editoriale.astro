@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'fr';
+---
+<PageLayout title={`Charte éditoriale – ${SITE_NAMES[lang]}`} description="D’où viennent le barème des amendes et des points et la liste des radars publiés ici, qui en répond, à quel rythme ils sont relus, et ce qui se passe quand une erreur est signalée." lang={lang} noindex={true} breadcrumbs={[{ label: 'Charte éditoriale' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Charte éditoriale et politique de correction</h1>
+    <p>Un montant faux fait payer trop, ou laisser passer le délai de l’amende minorée ; un délai de récupération faux fait croire à un permis en règle. Voici d’où viennent nos chiffres et ce que nous faisons quand l’un d’eux est faux.</p>
+    <h2>Responsabilité</h2><p>{AUTHOR_NAME} répond de chaque montant, de chaque nombre de points, de chaque délai et de chaque calcul des outils. Un chiffre qui ne correspond pas à sa source se signale à <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Sources primaires uniquement</h2>
+    <ul>
+      <li><strong>le Code de la route et le Code de procédure pénale</strong>, dans leur version en vigueur sur Légifrance, et les décrets, arrêtés et lois qui les modifient ;</li>
+      <li><strong>les fiches de Service Public</strong> sur l’amende forfaitaire, le barème des points, leur récupération et les limitations de vitesse ;</li>
+      <li><strong>le fichier « Liste des radars fixes en France »</strong> du ministère de l’Intérieur, sur data.gouv.fr (Licence Ouverte 2.0) ;</li>
+      <li><strong>l’API Découpage administratif</strong> pour rattacher chaque radar à sa commune.</li>
+    </ul>
+    <p>Aucun chiffre n’est repris d’un vendeur de stages, d’un cabinet d’avocats, d’un assureur ou d’un forum. Une sanction que nous n’avons pas pu relire sur un texte en vigueur n’est pas publiée.</p>
+    <h2>Le maximum encouru, jamais un pronostic</h2><p>Pour un délit ou une suspension, nous donnons ce que le texte prévoit au plus. Nous ne prédisons pas la décision d’un juge ni celle d’un préfet, et ne promettons aucun résultat de contestation.</p>
+    <h2>Contrôles avant publication</h2><p>Les exemples de la méthode, les bornes de chaque tranche du barème et les délais de paiement sont des tests ; une mise à jour qui ne les retrouve pas est bloquée. Un fichier des radars de moins de 2 000 lignes est refusé.</p>
+    <h2>Calendrier de mise à jour</h2><p>Radars : chaque semaine. Barème : à chaque modification d’un texte cité ; les textes sont relus au moins une fois par an. La date de relecture est affichée sur chaque page.</p>
+    <h2>Traitement des erreurs</h2>
+    <ol><li>Vérification contre le texte en vigueur.</li><li>Correction des paramètres ou du code, ajout d’un test.</li><li>Nouvelle date sur les pages concernées.</li></ol>
+    <h2>Indépendance</h2><p>Aucun lien commercial avec un organisateur de stages, un avocat, une auto-école ou un assureur. Aucun lien sponsorisé dans les textes. Toute relation commerciale serait indiquée en clair.</p>
+    <p>Voir aussi la <a href={route('method', lang)}>méthode</a>. Version : {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

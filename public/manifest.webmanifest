@@ -1,0 +1,21 @@
+{
+ "name": "Amende et Points",
+ "short_name": "Amende et Points",
+ "description": "Excès de vitesse, feu rouge, téléphone, alcool : vitesse retenue, amende exacte, points retirés et délai de récupération, plus les radars fixes de chaque département.",
+ "start_url": "/fr/",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#A3271D",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

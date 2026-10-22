@@ -1,0 +1,4547 @@
+{
+ "meta": {
+  "fichier": "2025-12-30",
+  "nomFichier": "jeu-de-donnees-liste-des-radars-fixes-en-france-12-2025.csv",
+  "radars": 3309,
+  "sansCommune": 2,
+  "releve": "2026-10-21"
+ },
+ "national": {
+  "total": 3309,
+  "types": {
+   "ETF": 605,
+   "ETD": 554,
+   "ETT": 1492,
+   "ETU": 27,
+   "ETVM": 66,
+   "ETFR": 496,
+   "ETPN": 69
+  },
+  "vma": {
+   "30": 6,
+   "50": 494,
+   "60": 4,
+   "70": 448,
+   "80": 952,
+   "90": 659,
+   "110": 52,
+   "130": 16
+  },
+  "recents": 538,
+  "plusAncien": "2003-10",
+  "plusRecent": "2025-12",
+  "communes": 0
+ },
+ "deps": {
+  "10": {
+   "total": 34,
+   "types": {
+    "ETF": 5,
+    "ETD": 9,
+    "ETT": 15,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 5,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "80": 9,
+    "90": 18
+   },
+   "recents": 7,
+   "plusAncien": "2007-03",
+   "plusRecent": "2024-03",
+   "communes": 30,
+   "nom": "Aube",
+   "topCommunes": [
+    [
+     "Nogent-sur-Seine",
+     2
+    ],
+    [
+     "Romilly-sur-Seine",
+     2
+    ],
+    [
+     "Saint-Julien-les-Villas",
+     2
+    ],
+    [
+     "Troyes",
+     2
+    ],
+    [
+     "Bar-sur-Aube",
+     1
+    ]
+   ]
+  },
+  "11": {
+   "total": 20,
+   "types": {
+    "ETF": 1,
+    "ETD": 4,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 5,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 3,
+    "80": 6,
+    "90": 4
+   },
+   "recents": 4,
+   "plusAncien": "2009-10",
+   "plusRecent": "2025-10",
+   "communes": 13,
+   "nom": "Aude",
+   "topCommunes": [
+    [
+     "Carcassonne",
+     6
+    ],
+    [
+     "Lézignan-Corbières",
+     2
+    ],
+    [
+     "Narbonne",
+     2
+    ],
+    [
+     "Argeliers",
+     1
+    ],
+    [
+     "Armissan",
+     1
+    ]
+   ]
+  },
+  "12": {
+   "total": 9,
+   "types": {
+    "ETF": 4,
+    "ETD": 1,
+    "ETT": 4,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 1,
+    "80": 2,
+    "90": 6
+   },
+   "recents": 1,
+   "plusAncien": "2004-10",
+   "plusRecent": "2023-07",
+   "communes": 9,
+   "nom": "Aveyron",
+   "topCommunes": [
+    [
+     "Baraqueville",
+     1
+    ],
+    [
+     "Estaing",
+     1
+    ],
+    [
+     "Firmi",
+     1
+    ],
+    [
+     "Maleville",
+     1
+    ],
+    [
+     "Mayran",
+     1
+    ]
+   ]
+  },
+  "13": {
+   "total": 76,
+   "types": {
+    "ETF": 5,
+    "ETD": 13,
+    "ETT": 44,
+    "ETU": 3,
+    "ETVM": 3,
+    "ETFR": 6,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 4,
+    "70": 10,
+    "80": 19,
+    "90": 13
+   },
+   "recents": 12,
+   "plusAncien": "2003-12",
+   "plusRecent": "2025-09",
+   "communes": 30,
+   "nom": "Bouches-du-Rhône",
+   "topCommunes": [
+    [
+     "Marseille",
+     20
+    ],
+    [
+     "Arles",
+     6
+    ],
+    [
+     "Les Pennes-Mirabeau",
+     6
+    ],
+    [
+     "Aix-en-Provence",
+     4
+    ],
+    [
+     "Châteaurenard",
+     3
+    ]
+   ]
+  },
+  "14": {
+   "total": 23,
+   "types": {
+    "ETF": 8,
+    "ETD": 5,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 7,
+    "80": 6,
+    "90": 8
+   },
+   "recents": 2,
+   "plusAncien": "2003-12",
+   "plusRecent": "2025-02",
+   "communes": 22,
+   "nom": "Calvados",
+   "topCommunes": [
+    [
+     "Hérouville-Saint-Clair",
+     2
+    ],
+    [
+     "Bavent",
+     1
+    ],
+    [
+     "Bons-Tassilly",
+     1
+    ],
+    [
+     "Canapville",
+     1
+    ],
+    [
+     "Carpiquet",
+     1
+    ]
+   ]
+  },
+  "15": {
+   "total": 13,
+   "types": {
+    "ETF": 6,
+    "ETD": 4,
+    "ETT": 3,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 1,
+    "80": 5,
+    "90": 6
+   },
+   "recents": 1,
+   "plusAncien": "2005-06",
+   "plusRecent": "2023-10",
+   "communes": 12,
+   "nom": "Cantal",
+   "topCommunes": [
+    [
+     "Vieillespesse",
+     2
+    ],
+    [
+     "Arpajon-sur-Cère",
+     1
+    ],
+    [
+     "Aurillac",
+     1
+    ],
+    [
+     "Lanobre",
+     1
+    ],
+    [
+     "Massiac",
+     1
+    ]
+   ]
+  },
+  "16": {
+   "total": 39,
+   "types": {
+    "ETF": 4,
+    "ETD": 6,
+    "ETT": 8,
+    "ETU": 1,
+    "ETVM": 1,
+    "ETFR": 19,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 5,
+    "70": 4,
+    "80": 3,
+    "90": 8
+   },
+   "recents": 4,
+   "plusAncien": "2005-05",
+   "plusRecent": "2025-12",
+   "communes": 22,
+   "nom": "Charente",
+   "topCommunes": [
+    [
+     "La Rochefoucauld-en-Angoumois",
+     5
+    ],
+    [
+     "Angoulême",
+     4
+    ],
+    [
+     "Châteaubernard",
+     4
+    ],
+    [
+     "Gond-Pontouvre",
+     4
+    ],
+    [
+     "Terres-de-Haute-Charente",
+     3
+    ]
+   ]
+  },
+  "17": {
+   "total": 34,
+   "types": {
+    "ETF": 3,
+    "ETD": 6,
+    "ETT": 16,
+    "ETU": 0,
+    "ETVM": 3,
+    "ETFR": 6,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 7,
+    "80": 16,
+    "90": 3,
+    "130": 1
+   },
+   "recents": 5,
+   "plusAncien": "2005-01",
+   "plusRecent": "2025-12",
+   "communes": 30,
+   "nom": "Charente-Maritime",
+   "topCommunes": [
+    [
+     "La Rochelle",
+     4
+    ],
+    [
+     "Royan",
+     2
+    ],
+    [
+     "Angoulins",
+     1
+    ],
+    [
+     "Ars-en-Ré",
+     1
+    ],
+    [
+     "Aytré",
+     1
+    ]
+   ]
+  },
+  "18": {
+   "total": 31,
+   "types": {
+    "ETF": 2,
+    "ETD": 3,
+    "ETT": 14,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 11,
+    "ETPN": 1
+   },
+   "vma": {
+    "50": 7,
+    "70": 3,
+    "80": 4,
+    "90": 5
+   },
+   "recents": 2,
+   "plusAncien": "2004-12",
+   "plusRecent": "2024-07",
+   "communes": 16,
+   "nom": "Cher",
+   "topCommunes": [
+    [
+     "Bourges",
+     11
+    ],
+    [
+     "Bengy-sur-Craon",
+     2
+    ],
+    [
+     "Marmagne",
+     2
+    ],
+    [
+     "Saint-Doulchard",
+     2
+    ],
+    [
+     "Vierzon",
+     2
+    ]
+   ]
+  },
+  "19": {
+   "total": 23,
+   "types": {
+    "ETF": 2,
+    "ETD": 5,
+    "ETT": 8,
+    "ETU": 0,
+    "ETVM": 3,
+    "ETFR": 3,
+    "ETPN": 2
+   },
+   "vma": {
+    "70": 1,
+    "90": 14,
+    "110": 2,
+    "130": 1
+   },
+   "recents": 3,
+   "plusAncien": "2009-05",
+   "plusRecent": "2024-07",
+   "communes": 18,
+   "nom": "Corrèze",
+   "topCommunes": [
+    [
+     "Brive-la-Gaillarde",
+     4
+    ],
+    [
+     "Allassac",
+     3
+    ],
+    [
+     "Cornil",
+     1
+    ],
+    [
+     "Cosnac",
+     1
+    ],
+    [
+     "Donzenac",
+     1
+    ]
+   ]
+  },
+  "21": {
+   "total": 28,
+   "types": {
+    "ETF": 4,
+    "ETD": 6,
+    "ETT": 8,
+    "ETU": 2,
+    "ETVM": 2,
+    "ETFR": 6,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 2,
+    "80": 2,
+    "90": 11
+   },
+   "recents": 5,
+   "plusAncien": "2004-12",
+   "plusRecent": "2025-12",
+   "communes": 17,
+   "nom": "Côte-d'Or",
+   "topCommunes": [
+    [
+     "Dijon",
+     10
+    ],
+    [
+     "Éguilly",
+     2
+    ],
+    [
+     "Plombières-lès-Dijon",
+     2
+    ],
+    [
+     "Asnières-lès-Dijon",
+     1
+    ],
+    [
+     "Auxey-Duresses",
+     1
+    ]
+   ]
+  },
+  "22": {
+   "total": 29,
+   "types": {
+    "ETF": 4,
+    "ETD": 12,
+    "ETT": 11,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 2,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 6,
+    "80": 21
+   },
+   "recents": 3,
+   "plusAncien": "2009-07",
+   "plusRecent": "2024-04",
+   "communes": 24,
+   "nom": "Côtes-d'Armor",
+   "topCommunes": [
+    [
+     "Saint-Brieuc",
+     4
+    ],
+    [
+     "Lamballe-Armor",
+     3
+    ],
+    [
+     "Bégard",
+     1
+    ],
+    [
+     "Grâces",
+     1
+    ],
+    [
+     "Hénansal",
+     1
+    ]
+   ]
+  },
+  "23": {
+   "total": 14,
+   "types": {
+    "ETF": 3,
+    "ETD": 6,
+    "ETT": 4,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "80": 6,
+    "90": 4,
+    "110": 1
+   },
+   "recents": 2,
+   "plusAncien": "2005-01",
+   "plusRecent": "2024-03",
+   "communes": 12,
+   "nom": "Creuse",
+   "topCommunes": [
+    [
+     "Ajain",
+     2
+    ],
+    [
+     "Saint-Vaury",
+     2
+    ],
+    [
+     "Budelière",
+     1
+    ],
+    [
+     "Glénic",
+     1
+    ],
+    [
+     "La Saunière",
+     1
+    ]
+   ]
+  },
+  "24": {
+   "total": 24,
+   "types": {
+    "ETF": 5,
+    "ETD": 3,
+    "ETT": 11,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 4,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 2,
+    "80": 12,
+    "90": 4,
+    "110": 1
+   },
+   "recents": 4,
+   "plusAncien": "2005-02",
+   "plusRecent": "2024-07",
+   "communes": 21,
+   "nom": "Dordogne",
+   "topCommunes": [
+    [
+     "Périgueux",
+     2
+    ],
+    [
+     "Saint-Romain-et-Saint-Clément",
+     2
+    ],
+    [
+     "Sarlat-la-Canéda",
+     2
+    ],
+    [
+     "Antonne-et-Trigonant",
+     1
+    ],
+    [
+     "Boulazac Isle Manoire",
+     1
+    ]
+   ]
+  },
+  "25": {
+   "total": 32,
+   "types": {
+    "ETF": 5,
+    "ETD": 3,
+    "ETT": 16,
+    "ETU": 6,
+    "ETVM": 2,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 9,
+    "70": 3,
+    "80": 7,
+    "90": 12
+   },
+   "recents": 9,
+   "plusAncien": "2005-03",
+   "plusRecent": "2024-01",
+   "communes": 29,
+   "nom": "Doubs",
+   "topCommunes": [
+    [
+     "Besançon",
+     2
+    ],
+    [
+     "Exincourt",
+     2
+    ],
+    [
+     "Fuans",
+     2
+    ],
+    [
+     "Amagney",
+     1
+    ],
+    [
+     "Audincourt",
+     1
+    ]
+   ]
+  },
+  "26": {
+   "total": 23,
+   "types": {
+    "ETF": 6,
+    "ETD": 4,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 3,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "80": 14,
+    "90": 3,
+    "110": 1,
+    "130": 1
+   },
+   "recents": 4,
+   "plusAncien": "2004-10",
+   "plusRecent": "2024-01",
+   "communes": 19,
+   "nom": "Drôme",
+   "topCommunes": [
+    [
+     "Alixan",
+     2
+    ],
+    [
+     "Bourg-lès-Valence",
+     2
+    ],
+    [
+     "Montélimar",
+     2
+    ],
+    [
+     "Valence",
+     2
+    ],
+    [
+     "Beausemblant",
+     1
+    ]
+   ]
+  },
+  "27": {
+   "total": 45,
+   "types": {
+    "ETF": 7,
+    "ETD": 8,
+    "ETT": 24,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 3,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 2,
+    "70": 4,
+    "80": 29,
+    "90": 4,
+    "130": 1
+   },
+   "recents": 5,
+   "plusAncien": "2006-02",
+   "plusRecent": "2024-07",
+   "communes": 41,
+   "nom": "Eure",
+   "topCommunes": [
+    [
+     "Verneuil d'Avre et d'Iton",
+     3
+    ],
+    [
+     "Bosrobert",
+     2
+    ],
+    [
+     "Évreux",
+     2
+    ],
+    [
+     "Aclou",
+     1
+    ],
+    [
+     "Armentières-sur-Avre",
+     1
+    ]
+   ]
+  },
+  "28": {
+   "total": 34,
+   "types": {
+    "ETF": 11,
+    "ETD": 13,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 1,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "70": 3,
+    "80": 13,
+    "90": 14
+   },
+   "recents": 1,
+   "plusAncien": "2005-04",
+   "plusRecent": "2024-03",
+   "communes": 29,
+   "nom": "Eure-et-Loir",
+   "topCommunes": [
+    [
+     "Bonneval",
+     2
+    ],
+    [
+     "Cherisy",
+     2
+    ],
+    [
+     "Fresnay-l'Évêque",
+     2
+    ],
+    [
+     "Le Gué-de-Longroi",
+     2
+    ],
+    [
+     "Saint-Bomer",
+     2
+    ]
+   ]
+  },
+  "29": {
+   "total": 20,
+   "types": {
+    "ETF": 5,
+    "ETD": 10,
+    "ETT": 3,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 1,
+    "ETPN": 0
+   },
+   "vma": {
+    "80": 15,
+    "90": 1,
+    "110": 3
+   },
+   "recents": 0,
+   "plusAncien": "2005-07",
+   "plusRecent": "2022-12",
+   "communes": 16,
+   "nom": "Finistère",
+   "topCommunes": [
+    [
+     "Dirinon",
+     2
+    ],
+    [
+     "Le Relecq-Kerhuon",
+     2
+    ],
+    [
+     "Mellac",
+     2
+    ],
+    [
+     "Plouigneau",
+     2
+    ],
+    [
+     "Fouesnant",
+     1
+    ]
+   ]
+  },
+  "30": {
+   "total": 59,
+   "types": {
+    "ETF": 1,
+    "ETD": 7,
+    "ETT": 30,
+    "ETU": 0,
+    "ETVM": 3,
+    "ETFR": 18,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 3,
+    "80": 28,
+    "90": 8
+   },
+   "recents": 9,
+   "plusAncien": "2010-02",
+   "plusRecent": "2025-07",
+   "communes": 42,
+   "nom": "Gard",
+   "topCommunes": [
+    [
+     "Nîmes",
+     12
+    ],
+    [
+     "Alès",
+     4
+    ],
+    [
+     "Bellegarde",
+     2
+    ],
+    [
+     "Jonquières-Saint-Vincent",
+     2
+    ],
+    [
+     "Milhaud",
+     2
+    ]
+   ]
+  },
+  "31": {
+   "total": 55,
+   "types": {
+    "ETF": 4,
+    "ETD": 13,
+    "ETT": 15,
+    "ETU": 6,
+    "ETVM": 1,
+    "ETFR": 14,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 10,
+    "70": 4,
+    "80": 17,
+    "90": 5,
+    "130": 1
+   },
+   "recents": 11,
+   "plusAncien": "2005-08",
+   "plusRecent": "2025-04",
+   "communes": 22,
+   "nom": "Haute-Garonne",
+   "topCommunes": [
+    [
+     "Toulouse",
+     32
+    ],
+    [
+     "Balma",
+     2
+    ],
+    [
+     "Roquefort-sur-Garonne",
+     2
+    ],
+    [
+     "Caubiac",
+     1
+    ],
+    [
+     "Cintegabelle",
+     1
+    ]
+   ]
+  },
+  "32": {
+   "total": 22,
+   "types": {
+    "ETF": 6,
+    "ETD": 4,
+    "ETT": 12,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "80": 15,
+    "90": 6
+   },
+   "recents": 7,
+   "plusAncien": "2007-01",
+   "plusRecent": "2025-05",
+   "communes": 20,
+   "nom": "Gers",
+   "topCommunes": [
+    [
+     "Auch",
+     2
+    ],
+    [
+     "Vic-Fezensac",
+     2
+    ],
+    [
+     "Barcelonne-du-Gers",
+     1
+    ],
+    [
+     "Boucagnères",
+     1
+    ],
+    [
+     "Endoufielle",
+     1
+    ]
+   ]
+  },
+  "33": {
+   "total": 55,
+   "types": {
+    "ETF": 4,
+    "ETD": 8,
+    "ETT": 34,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 9,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 17,
+    "70": 8,
+    "80": 17,
+    "90": 4
+   },
+   "recents": 18,
+   "plusAncien": "2004-01",
+   "plusRecent": "2025-05",
+   "communes": 39,
+   "nom": "Gironde",
+   "topCommunes": [
+    [
+     "Bordeaux",
+     9
+    ],
+    [
+     "Lanton",
+     5
+    ],
+    [
+     "Mios",
+     4
+    ],
+    [
+     "Audenge",
+     2
+    ],
+    [
+     "Abzac",
+     1
+    ]
+   ]
+  },
+  "34": {
+   "total": 50,
+   "types": {
+    "ETF": 4,
+    "ETD": 5,
+    "ETT": 14,
+    "ETU": 2,
+    "ETVM": 2,
+    "ETFR": 17,
+    "ETPN": 6
+   },
+   "vma": {
+    "50": 2,
+    "70": 4,
+    "80": 4,
+    "90": 12,
+    "110": 2
+   },
+   "recents": 2,
+   "plusAncien": "2007-02",
+   "plusRecent": "2025-11",
+   "communes": 23,
+   "nom": "Hérault",
+   "topCommunes": [
+    [
+     "Montpellier",
+     19
+    ],
+    [
+     "Béziers",
+     5
+    ],
+    [
+     "Agde",
+     3
+    ],
+    [
+     "Castelnau-le-Lez",
+     2
+    ],
+    [
+     "Lunel",
+     2
+    ]
+   ]
+  },
+  "35": {
+   "total": 39,
+   "types": {
+    "ETF": 7,
+    "ETD": 10,
+    "ETT": 17,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 4,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 6,
+    "80": 23,
+    "110": 2
+   },
+   "recents": 4,
+   "plusAncien": "2003-12",
+   "plusRecent": "2025-05",
+   "communes": 35,
+   "nom": "Ille-et-Vilaine",
+   "topCommunes": [
+    [
+     "Le Rheu",
+     3
+    ],
+    [
+     "Rennes",
+     3
+    ],
+    [
+     "Bain-de-Bretagne",
+     1
+    ],
+    [
+     "Bains-sur-Oust",
+     1
+    ],
+    [
+     "Balazé",
+     1
+    ]
+   ]
+  },
+  "36": {
+   "total": 22,
+   "types": {
+    "ETF": 8,
+    "ETD": 5,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 1,
+    "80": 5,
+    "90": 15
+   },
+   "recents": 4,
+   "plusAncien": "2005-01",
+   "plusRecent": "2024-07",
+   "communes": 18,
+   "nom": "Indre",
+   "topCommunes": [
+    [
+     "Saint-Maur",
+     4
+    ],
+    [
+     "Châteauroux",
+     2
+    ],
+    [
+     "Ardentes",
+     1
+    ],
+    [
+     "Châtillon-sur-Indre",
+     1
+    ],
+    [
+     "Ciron",
+     1
+    ]
+   ]
+  },
+  "37": {
+   "total": 42,
+   "types": {
+    "ETF": 6,
+    "ETD": 9,
+    "ETT": 14,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 10,
+    "ETPN": 2
+   },
+   "vma": {
+    "70": 5,
+    "80": 15,
+    "90": 10
+   },
+   "recents": 3,
+   "plusAncien": "2007-02",
+   "plusRecent": "2023-12",
+   "communes": 26,
+   "nom": "Indre-et-Loire",
+   "topCommunes": [
+    [
+     "Monnaie",
+     6
+    ],
+    [
+     "Neuillé-Pont-Pierre",
+     6
+    ],
+    [
+     "Joué-lès-Tours",
+     3
+    ],
+    [
+     "Saint-Pierre-des-Corps",
+     3
+    ],
+    [
+     "Coteaux-sur-Loire",
+     2
+    ]
+   ]
+  },
+  "38": {
+   "total": 41,
+   "types": {
+    "ETF": 3,
+    "ETD": 6,
+    "ETT": 26,
+    "ETU": 0,
+    "ETVM": 2,
+    "ETFR": 2,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 4,
+    "70": 3,
+    "80": 12,
+    "90": 15,
+    "130": 1
+   },
+   "recents": 9,
+   "plusAncien": "2004-11",
+   "plusRecent": "2025-07",
+   "communes": 35,
+   "nom": "Isère",
+   "topCommunes": [
+    [
+     "La Verpillière",
+     3
+    ],
+    [
+     "Le Pont-de-Claix",
+     3
+    ],
+    [
+     "Le Pont-de-Beauvoisin",
+     2
+    ],
+    [
+     "Vienne",
+     2
+    ],
+    [
+     "Apprieu",
+     1
+    ]
+   ]
+  },
+  "39": {
+   "total": 19,
+   "types": {
+    "ETF": 8,
+    "ETD": 1,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 1,
+    "80": 4,
+    "90": 10
+   },
+   "recents": 5,
+   "plusAncien": "2005-04",
+   "plusRecent": "2025-02",
+   "communes": 19,
+   "nom": "Jura",
+   "topCommunes": [
+    [
+     "Alièze",
+     1
+    ],
+    [
+     "Arbois",
+     1
+    ],
+    [
+     "Beaufort-Orbagna",
+     1
+    ],
+    [
+     "Buvilly",
+     1
+    ],
+    [
+     "Champagnole",
+     1
+    ]
+   ]
+  },
+  "40": {
+   "total": 64,
+   "types": {
+    "ETF": 0,
+    "ETD": 8,
+    "ETT": 52,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 3,
+    "ETPN": 1
+   },
+   "vma": {
+    "50": 25,
+    "70": 10,
+    "80": 18,
+    "90": 7
+   },
+   "recents": 30,
+   "plusAncien": "2010-01",
+   "plusRecent": "2025-12",
+   "communes": 49,
+   "nom": "Landes",
+   "topCommunes": [
+    [
+     "Mimizan",
+     3
+    ],
+    [
+     "Pontenx-les-Forges",
+     3
+    ],
+    [
+     "Saint-Martin-de-Seignanx",
+     3
+    ],
+    [
+     "Saint-Sever",
+     3
+    ],
+    [
+     "Biscarrosse",
+     2
+    ]
+   ]
+  },
+  "41": {
+   "total": 23,
+   "types": {
+    "ETF": 11,
+    "ETD": 3,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "70": 7,
+    "80": 7,
+    "90": 6
+   },
+   "recents": 2,
+   "plusAncien": "2005-08",
+   "plusRecent": "2025-02",
+   "communes": 20,
+   "nom": "Loir-et-Cher",
+   "topCommunes": [
+    [
+     "La Chaussée-Saint-Victor",
+     2
+    ],
+    [
+     "Salbris",
+     2
+    ],
+    [
+     "Vendôme",
+     2
+    ],
+    [
+     "Binas",
+     1
+    ],
+    [
+     "Blois",
+     1
+    ]
+   ]
+  },
+  "42": {
+   "total": 22,
+   "types": {
+    "ETF": 2,
+    "ETD": 2,
+    "ETT": 14,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 4,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 7,
+    "80": 6
+   },
+   "recents": 5,
+   "plusAncien": "2005-04",
+   "plusRecent": "2023-10",
+   "communes": 16,
+   "nom": "Loire",
+   "topCommunes": [
+    [
+     "Saint-Étienne",
+     6
+    ],
+    [
+     "La Ricamarie",
+     2
+    ],
+    [
+     "Bellegarde-en-Forez",
+     1
+    ],
+    [
+     "Chazelles-sur-Lyon",
+     1
+    ],
+    [
+     "Cuzieu",
+     1
+    ]
+   ]
+  },
+  "43": {
+   "total": 20,
+   "types": {
+    "ETF": 1,
+    "ETD": 2,
+    "ETT": 15,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 2,
+    "70": 2,
+    "80": 5,
+    "90": 9
+   },
+   "recents": 2,
+   "plusAncien": "2010-11",
+   "plusRecent": "2024-03",
+   "communes": 19,
+   "nom": "Haute-Loire",
+   "topCommunes": [
+    [
+     "Bournoncle-Saint-Pierre",
+     2
+    ],
+    [
+     "Bains",
+     1
+    ],
+    [
+     "Bas-en-Basset",
+     1
+    ],
+    [
+     "Bellevue-la-Montagne",
+     1
+    ],
+    [
+     "Ceyssac",
+     1
+    ]
+   ]
+  },
+  "44": {
+   "total": 48,
+   "types": {
+    "ETF": 10,
+    "ETD": 16,
+    "ETT": 11,
+    "ETU": 0,
+    "ETVM": 2,
+    "ETFR": 5,
+    "ETPN": 4
+   },
+   "vma": {
+    "50": 2,
+    "70": 12,
+    "80": 23,
+    "90": 2
+   },
+   "recents": 4,
+   "plusAncien": "2005-05",
+   "plusRecent": "2025-09",
+   "communes": 36,
+   "nom": "Loire-Atlantique",
+   "topCommunes": [
+    [
+     "Nantes",
+     7
+    ],
+    [
+     "La Haie-Fouassière",
+     2
+    ],
+    [
+     "Machecoul-Saint-Même",
+     2
+    ],
+    [
+     "Rezé",
+     2
+    ],
+    [
+     "Saint-Herblain",
+     2
+    ]
+   ]
+  },
+  "45": {
+   "total": 48,
+   "types": {
+    "ETF": 10,
+    "ETD": 6,
+    "ETT": 16,
+    "ETU": 0,
+    "ETVM": 4,
+    "ETFR": 10,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 7,
+    "70": 8,
+    "80": 3,
+    "90": 18
+   },
+   "recents": 3,
+   "plusAncien": "2004-10",
+   "plusRecent": "2023-10",
+   "communes": 29,
+   "nom": "Loiret",
+   "topCommunes": [
+    [
+     "Orléans",
+     8
+    ],
+    [
+     "Amilly",
+     5
+    ],
+    [
+     "Fontenay-sur-Loing",
+     3
+    ],
+    [
+     "Chevilly",
+     2
+    ],
+    [
+     "Fleury-les-Aubrais",
+     2
+    ]
+   ]
+  },
+  "46": {
+   "total": 11,
+   "types": {
+    "ETF": 4,
+    "ETD": 2,
+    "ETT": 5,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "80": 8,
+    "90": 1
+   },
+   "recents": 2,
+   "plusAncien": "2005-06",
+   "plusRecent": "2023-10",
+   "communes": 10,
+   "nom": "Lot",
+   "topCommunes": [
+    [
+     "Cahors",
+     2
+    ],
+    [
+     "Camboulit",
+     1
+    ],
+    [
+     "Camburat",
+     1
+    ],
+    [
+     "Duravel",
+     1
+    ],
+    [
+     "Espère",
+     1
+    ]
+   ]
+  },
+  "47": {
+   "total": 41,
+   "types": {
+    "ETF": 3,
+    "ETD": 1,
+    "ETT": 24,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 10,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 4,
+    "70": 3,
+    "80": 19,
+    "90": 2,
+    "110": 1
+   },
+   "recents": 3,
+   "plusAncien": "2004-12",
+   "plusRecent": "2024-07",
+   "communes": 28,
+   "nom": "Lot-et-Garonne",
+   "topCommunes": [
+    [
+     "Villeneuve-sur-Lot",
+     7
+    ],
+    [
+     "Agen",
+     5
+    ],
+    [
+     "Marmande",
+     4
+    ],
+    [
+     "Bourlens",
+     1
+    ],
+    [
+     "Brax",
+     1
+    ]
+   ]
+  },
+  "48": {
+   "total": 7,
+   "types": {
+    "ETF": 1,
+    "ETD": 1,
+    "ETT": 5,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "80": 4,
+    "90": 2
+   },
+   "recents": 0,
+   "plusAncien": "2008-12",
+   "plusRecent": "2022-11",
+   "communes": 7,
+   "nom": "Lozère",
+   "topCommunes": [
+    [
+     "Banassac-Canilhac",
+     1
+    ],
+    [
+     "Cultures",
+     1
+    ],
+    [
+     "Langogne",
+     1
+    ],
+    [
+     "Mende",
+     1
+    ],
+    [
+     "Monts-de-Randon",
+     1
+    ]
+   ]
+  },
+  "49": {
+   "total": 29,
+   "types": {
+    "ETF": 11,
+    "ETD": 7,
+    "ETT": 8,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 3,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 2,
+    "80": 6,
+    "90": 16
+   },
+   "recents": 4,
+   "plusAncien": "2003-11",
+   "plusRecent": "2024-05",
+   "communes": 22,
+   "nom": "Maine-et-Loire",
+   "topCommunes": [
+    [
+     "Angers",
+     4
+    ],
+    [
+     "Cholet",
+     4
+    ],
+    [
+     "Chemillé-en-Anjou",
+     2
+    ],
+    [
+     "Avrillé",
+     1
+    ],
+    [
+     "Baugé-en-Anjou",
+     1
+    ]
+   ]
+  },
+  "50": {
+   "total": 25,
+   "types": {
+    "ETF": 6,
+    "ETD": 8,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 4,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 2,
+    "80": 15,
+    "90": 3,
+    "110": 1
+   },
+   "recents": 2,
+   "plusAncien": "2005-05",
+   "plusRecent": "2024-07",
+   "communes": 22,
+   "nom": "Manche",
+   "topCommunes": [
+    [
+     "Cherbourg-en-Cotentin",
+     3
+    ],
+    [
+     "Servon",
+     2
+    ],
+    [
+     "Avranches",
+     1
+    ],
+    [
+     "Bréhal",
+     1
+    ],
+    [
+     "Bricquebec-en-Cotentin",
+     1
+    ]
+   ]
+  },
+  "51": {
+   "total": 34,
+   "types": {
+    "ETF": 9,
+    "ETD": 5,
+    "ETT": 17,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 2,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 11,
+    "70": 7,
+    "80": 8,
+    "90": 5,
+    "110": 1
+   },
+   "recents": 9,
+   "plusAncien": "2005-06",
+   "plusRecent": "2025-04",
+   "communes": 25,
+   "nom": "Marne",
+   "topCommunes": [
+    [
+     "Reims",
+     5
+    ],
+    [
+     "Châlons-en-Champagne",
+     3
+    ],
+    [
+     "Esternay",
+     2
+    ],
+    [
+     "La Noue",
+     2
+    ],
+    [
+     "Vauclerc",
+     2
+    ]
+   ]
+  },
+  "52": {
+   "total": 29,
+   "types": {
+    "ETF": 4,
+    "ETD": 3,
+    "ETT": 14,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 8,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "70": 5,
+    "80": 4,
+    "90": 9
+   },
+   "recents": 1,
+   "plusAncien": "2005-02",
+   "plusRecent": "2025-05",
+   "communes": 20,
+   "nom": "Haute-Marne",
+   "topCommunes": [
+    [
+     "Chaumont",
+     4
+    ],
+    [
+     "Saint-Dizier",
+     4
+    ],
+    [
+     "Hallignicourt",
+     2
+    ],
+    [
+     "Langres",
+     2
+    ],
+    [
+     "Vignory",
+     2
+    ]
+   ]
+  },
+  "53": {
+   "total": 18,
+   "types": {
+    "ETF": 9,
+    "ETD": 2,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 4,
+    "80": 3,
+    "90": 7
+   },
+   "recents": 4,
+   "plusAncien": "2004-12",
+   "plusRecent": "2024-08",
+   "communes": 13,
+   "nom": "Mayenne",
+   "topCommunes": [
+    [
+     "Laval",
+     3
+    ],
+    [
+     "Ahuillé",
+     2
+    ],
+    [
+     "Château-Gontier-sur-Mayenne",
+     2
+    ],
+    [
+     "Entrammes",
+     2
+    ],
+    [
+     "Arquenay",
+     1
+    ]
+   ]
+  },
+  "54": {
+   "total": 28,
+   "types": {
+    "ETF": 1,
+    "ETD": 9,
+    "ETT": 5,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 13,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 3,
+    "80": 5,
+    "90": 5
+   },
+   "recents": 4,
+   "plusAncien": "2008-07",
+   "plusRecent": "2025-06",
+   "communes": 15,
+   "nom": "Meurthe-et-Moselle",
+   "topCommunes": [
+    [
+     "Nancy",
+     10
+    ],
+    [
+     "Laxou",
+     3
+    ],
+    [
+     "Houdemont",
+     2
+    ],
+    [
+     "Maxéville",
+     2
+    ],
+    [
+     "Crantenoy",
+     1
+    ]
+   ]
+  },
+  "55": {
+   "total": 14,
+   "types": {
+    "ETF": 3,
+    "ETD": 4,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 6,
+    "70": 1,
+    "80": 3,
+    "90": 4
+   },
+   "recents": 2,
+   "plusAncien": "2005-06",
+   "plusRecent": "2024-05",
+   "communes": 13,
+   "nom": "Meuse",
+   "topCommunes": [
+    [
+     "Haudainville",
+     2
+    ],
+    [
+     "Bar-le-Duc",
+     1
+    ],
+    [
+     "Behonne",
+     1
+    ],
+    [
+     "Combles-en-Barrois",
+     1
+    ],
+    [
+     "Érize-la-Petite",
+     1
+    ]
+   ]
+  },
+  "56": {
+   "total": 31,
+   "types": {
+    "ETF": 6,
+    "ETD": 8,
+    "ETT": 14,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 2,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 3,
+    "80": 16,
+    "90": 8,
+    "110": 1
+   },
+   "recents": 4,
+   "plusAncien": "2005-09",
+   "plusRecent": "2025-08",
+   "communes": 26,
+   "nom": "Morbihan",
+   "topCommunes": [
+    [
+     "Kervignac",
+     3
+    ],
+    [
+     "Caudan",
+     2
+    ],
+    [
+     "Quéven",
+     2
+    ],
+    [
+     "Saint-Thuriau",
+     2
+    ],
+    [
+     "Arzal",
+     1
+    ]
+   ]
+  },
+  "57": {
+   "total": 46,
+   "types": {
+    "ETF": 5,
+    "ETD": 11,
+    "ETT": 29,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 1,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 5,
+    "70": 10,
+    "80": 19,
+    "90": 8,
+    "110": 3
+   },
+   "recents": 24,
+   "plusAncien": "2003-11",
+   "plusRecent": "2025-08",
+   "communes": 36,
+   "nom": "Moselle",
+   "topCommunes": [
+    [
+     "Thionville",
+     5
+    ],
+    [
+     "Metz",
+     3
+    ],
+    [
+     "Audun-le-Tiche",
+     2
+    ],
+    [
+     "Brulange",
+     2
+    ],
+    [
+     "Maizières-lès-Metz",
+     2
+    ]
+   ]
+  },
+  "58": {
+   "total": 15,
+   "types": {
+    "ETF": 3,
+    "ETD": 1,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 6,
+    "70": 2,
+    "80": 2,
+    "90": 4,
+    "110": 1
+   },
+   "recents": 5,
+   "plusAncien": "2008-03",
+   "plusRecent": "2024-10",
+   "communes": 12,
+   "nom": "Nièvre",
+   "topCommunes": [
+    [
+     "Marzy",
+     2
+    ],
+    [
+     "Nevers",
+     2
+    ],
+    [
+     "Sermoise-sur-Loire",
+     2
+    ],
+    [
+     "Challuy",
+     1
+    ],
+    [
+     "Magny-Cours",
+     1
+    ]
+   ]
+  },
+  "59": {
+   "total": 97,
+   "types": {
+    "ETF": 10,
+    "ETD": 27,
+    "ETT": 21,
+    "ETU": 1,
+    "ETVM": 3,
+    "ETFR": 28,
+    "ETPN": 7
+   },
+   "vma": {
+    "50": 15,
+    "70": 13,
+    "80": 8,
+    "90": 18,
+    "110": 3,
+    "130": 2
+   },
+   "recents": 25,
+   "plusAncien": "2005-10",
+   "plusRecent": "2025-12",
+   "communes": 52,
+   "nom": "Nord",
+   "topCommunes": [
+    [
+     "Lille",
+     13
+    ],
+    [
+     "Dunkerque",
+     8
+    ],
+    [
+     "Grande-Synthe",
+     4
+    ],
+    [
+     "Lambersart",
+     3
+    ],
+    [
+     "Lesquin",
+     3
+    ]
+   ]
+  },
+  "60": {
+   "total": 128,
+   "types": {
+    "ETF": 0,
+    "ETD": 10,
+    "ETT": 109,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 7,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 56,
+    "70": 10,
+    "80": 25,
+    "90": 9
+   },
+   "recents": 23,
+   "plusAncien": "2010-03",
+   "plusRecent": "2025-04",
+   "communes": 97,
+   "nom": "Oise",
+   "topCommunes": [
+    [
+     "Creil",
+     10
+    ],
+    [
+     "Beauvais",
+     5
+    ],
+    [
+     "Compiègne",
+     4
+    ],
+    [
+     "Chambly",
+     3
+    ],
+    [
+     "Jaulzy",
+     3
+    ]
+   ]
+  },
+  "61": {
+   "total": 45,
+   "types": {
+    "ETF": 12,
+    "ETD": 3,
+    "ETT": 29,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "70": 4,
+    "80": 2,
+    "90": 36
+   },
+   "recents": 17,
+   "plusAncien": "2005-02",
+   "plusRecent": "2025-09",
+   "communes": 43,
+   "nom": "Orne",
+   "topCommunes": [
+    [
+     "Crulai",
+     2
+    ],
+    [
+     "Magny-le-Désert",
+     2
+    ],
+    [
+     "Argentan",
+     1
+    ],
+    [
+     "Bagnoles de l'Orne Normandie",
+     1
+    ],
+    [
+     "Bailleul",
+     1
+    ]
+   ]
+  },
+  "62": {
+   "total": 43,
+   "types": {
+    "ETF": 3,
+    "ETD": 13,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 3,
+    "ETFR": 15,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 4,
+    "70": 2,
+    "80": 16,
+    "90": 4
+   },
+   "recents": 2,
+   "plusAncien": "2007-02",
+   "plusRecent": "2024-07",
+   "communes": 30,
+   "nom": "Pas-de-Calais",
+   "topCommunes": [
+    [
+     "Calais",
+     4
+    ],
+    [
+     "Hénin-Beaumont",
+     4
+    ],
+    [
+     "Lens",
+     3
+    ],
+    [
+     "Annequin",
+     2
+    ],
+    [
+     "Leubringhen",
+     2
+    ]
+   ]
+  },
+  "63": {
+   "total": 30,
+   "types": {
+    "ETF": 1,
+    "ETD": 4,
+    "ETT": 17,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 8,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 8,
+    "70": 2,
+    "80": 2,
+    "90": 9
+   },
+   "recents": 7,
+   "plusAncien": "2009-10",
+   "plusRecent": "2025-08",
+   "communes": 19,
+   "nom": "Puy-de-Dôme",
+   "topCommunes": [
+    [
+     "Clermont-Ferrand",
+     11
+    ],
+    [
+     "Riom",
+     2
+    ],
+    [
+     "Aubiat",
+     1
+    ],
+    [
+     "Celles-sur-Durolle",
+     1
+    ],
+    [
+     "Chambaron sur Morge",
+     1
+    ]
+   ]
+  },
+  "64": {
+   "total": 44,
+   "types": {
+    "ETF": 6,
+    "ETD": 1,
+    "ETT": 22,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 14,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 4,
+    "80": 22
+   },
+   "recents": 6,
+   "plusAncien": "2003-12",
+   "plusRecent": "2025-02",
+   "communes": 32,
+   "nom": "Pyrénées-Atlantiques",
+   "topCommunes": [
+    [
+     "Pau",
+     5
+    ],
+    [
+     "Bayonne",
+     4
+    ],
+    [
+     "Anglet",
+     3
+    ],
+    [
+     "Bidart",
+     2
+    ],
+    [
+     "Billère",
+     2
+    ]
+   ]
+  },
+  "65": {
+   "total": 14,
+   "types": {
+    "ETF": 4,
+    "ETD": 1,
+    "ETT": 6,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 3,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "60": 2,
+    "70": 2,
+    "80": 1,
+    "90": 3
+   },
+   "recents": 2,
+   "plusAncien": "2005-06",
+   "plusRecent": "2024-05",
+   "communes": 9,
+   "nom": "Hautes-Pyrénées",
+   "topCommunes": [
+    [
+     "Tarbes",
+     4
+    ],
+    [
+     "Aragnouet",
+     3
+    ],
+    [
+     "Escondeaux",
+     1
+    ],
+    [
+     "Estirac",
+     1
+    ],
+    [
+     "Ibos",
+     1
+    ]
+   ]
+  },
+  "66": {
+   "total": 35,
+   "types": {
+    "ETF": 2,
+    "ETD": 7,
+    "ETT": 13,
+    "ETU": 0,
+    "ETVM": 2,
+    "ETFR": 11,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "80": 17,
+    "90": 4,
+    "110": 1
+   },
+   "recents": 2,
+   "plusAncien": "2007-09",
+   "plusRecent": "2025-06",
+   "communes": 18,
+   "nom": "Pyrénées-Orientales",
+   "topCommunes": [
+    [
+     "Perpignan",
+     16
+    ],
+    [
+     "Argelès-sur-Mer",
+     2
+    ],
+    [
+     "Saint-Laurent-de-la-Salanque",
+     2
+    ],
+    [
+     "Bourg-Madame",
+     1
+    ],
+    [
+     "Canet-en-Roussillon",
+     1
+    ]
+   ]
+  },
+  "67": {
+   "total": 36,
+   "types": {
+    "ETF": 10,
+    "ETD": 5,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 10,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 4,
+    "80": 13,
+    "90": 3,
+    "130": 1
+   },
+   "recents": 2,
+   "plusAncien": "2003-10",
+   "plusRecent": "2023-11",
+   "communes": 19,
+   "nom": "Bas-Rhin",
+   "topCommunes": [
+    [
+     "Strasbourg",
+     11
+    ],
+    [
+     "Haguenau",
+     4
+    ],
+    [
+     "Sélestat",
+     4
+    ],
+    [
+     "Souffelweyersheim",
+     2
+    ],
+    [
+     "Bossendorf",
+     1
+    ]
+   ]
+  },
+  "68": {
+   "total": 35,
+   "types": {
+    "ETF": 3,
+    "ETD": 12,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 11,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 3,
+    "70": 3,
+    "80": 11,
+    "90": 5
+   },
+   "recents": 2,
+   "plusAncien": "2005-02",
+   "plusRecent": "2023-10",
+   "communes": 19,
+   "nom": "Haut-Rhin",
+   "topCommunes": [
+    [
+     "Mulhouse",
+     7
+    ],
+    [
+     "Colmar",
+     6
+    ],
+    [
+     "Illzach",
+     2
+    ],
+    [
+     "Ostheim",
+     2
+    ],
+    [
+     "Rouffach",
+     2
+    ]
+   ]
+  },
+  "69": {
+   "total": 44,
+   "types": {
+    "ETF": 10,
+    "ETD": 15,
+    "ETT": 12,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 2,
+    "ETPN": 4
+   },
+   "vma": {
+    "30": 1,
+    "50": 9,
+    "70": 10,
+    "80": 7,
+    "90": 3,
+    "110": 1
+   },
+   "recents": 8,
+   "plusAncien": "2003-12",
+   "plusRecent": "2025-11",
+   "communes": 23,
+   "nom": "Rhône",
+   "topCommunes": [
+    [
+     "Lyon",
+     10
+    ],
+    [
+     "Vénissieux",
+     4
+    ],
+    [
+     "Villeurbanne",
+     4
+    ],
+    [
+     "Civrieux-d'Azergues",
+     2
+    ],
+    [
+     "Condrieu",
+     2
+    ]
+   ]
+  },
+  "70": {
+   "total": 20,
+   "types": {
+    "ETF": 3,
+    "ETD": 1,
+    "ETT": 13,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 3,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "80": 8,
+    "90": 6
+   },
+   "recents": 0,
+   "plusAncien": "2005-04",
+   "plusRecent": "2020-11",
+   "communes": 18,
+   "nom": "Haute-Saône",
+   "topCommunes": [
+    [
+     "Ronchamp",
+     2
+    ],
+    [
+     "Vesoul",
+     2
+    ],
+    [
+     "Bougnon",
+     1
+    ],
+    [
+     "Cult",
+     1
+    ],
+    [
+     "Fougerolles-Saint-Valbert",
+     1
+    ]
+   ]
+  },
+  "71": {
+   "total": 24,
+   "types": {
+    "ETF": 8,
+    "ETD": 6,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 0,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 2,
+    "70": 4,
+    "80": 7,
+    "90": 8,
+    "110": 1
+   },
+   "recents": 3,
+   "plusAncien": "2005-04",
+   "plusRecent": "2024-07",
+   "communes": 21,
+   "nom": "Saône-et-Loire",
+   "topCommunes": [
+    [
+     "Mesvres",
+     2
+    ],
+    [
+     "Montbellet",
+     2
+    ],
+    [
+     "Sevrey",
+     2
+    ],
+    [
+     "Antully",
+     1
+    ],
+    [
+     "Bourbon-Lancy",
+     1
+    ]
+   ]
+  },
+  "72": {
+   "total": 34,
+   "types": {
+    "ETF": 12,
+    "ETD": 2,
+    "ETT": 6,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 10,
+    "ETPN": 4
+   },
+   "vma": {
+    "50": 1,
+    "70": 3,
+    "80": 4,
+    "90": 12
+   },
+   "recents": 1,
+   "plusAncien": "2006-07",
+   "plusRecent": "2023-01",
+   "communes": 20,
+   "nom": "Sarthe",
+   "topCommunes": [
+    [
+     "Le Mans",
+     12
+    ],
+    [
+     "La Flèche",
+     3
+    ],
+    [
+     "La Chapelle-Saint-Aubin",
+     2
+    ],
+    [
+     "Bérus",
+     1
+    ],
+    [
+     "Cérans-Foulletourte",
+     1
+    ]
+   ]
+  },
+  "73": {
+   "total": 31,
+   "types": {
+    "ETF": 7,
+    "ETD": 11,
+    "ETT": 8,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 3,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 1,
+    "70": 5,
+    "80": 15,
+    "90": 5
+   },
+   "recents": 1,
+   "plusAncien": "2004-01",
+   "plusRecent": "2023-01",
+   "communes": 23,
+   "nom": "Savoie",
+   "topCommunes": [
+    [
+     "Albertville",
+     4
+    ],
+    [
+     "Chambéry",
+     4
+    ],
+    [
+     "Aix-les-Bains",
+     2
+    ],
+    [
+     "Modane",
+     2
+    ],
+    [
+     "Argentine",
+     1
+    ]
+   ]
+  },
+  "74": {
+   "total": 40,
+   "types": {
+    "ETF": 11,
+    "ETD": 6,
+    "ETT": 15,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 7,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 5,
+    "70": 10,
+    "80": 9,
+    "90": 8,
+    "130": 1
+   },
+   "recents": 7,
+   "plusAncien": "2005-02",
+   "plusRecent": "2025-06",
+   "communes": 27,
+   "nom": "Haute-Savoie",
+   "topCommunes": [
+    [
+     "Annemasse",
+     4
+    ],
+    [
+     "Chamonix-Mont-Blanc",
+     4
+    ],
+    [
+     "Thonon-les-Bains",
+     4
+    ],
+    [
+     "Annecy",
+     3
+    ],
+    [
+     "Copponex",
+     2
+    ]
+   ]
+  },
+  "75": {
+   "total": 35,
+   "types": {
+    "ETF": 23,
+    "ETD": 1,
+    "ETT": 0,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 11,
+    "ETPN": 0
+   },
+   "vma": {
+    "30": 3,
+    "50": 19,
+    "70": 1,
+    "90": 1
+   },
+   "recents": 1,
+   "plusAncien": "2004-01",
+   "plusRecent": "2025-01",
+   "communes": 1,
+   "nom": "Paris",
+   "topCommunes": [
+    [
+     "Paris",
+     35
+    ]
+   ]
+  },
+  "76": {
+   "total": 33,
+   "types": {
+    "ETF": 3,
+    "ETD": 8,
+    "ETT": 11,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 11,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 5,
+    "80": 11,
+    "90": 5
+   },
+   "recents": 3,
+   "plusAncien": "2004-08",
+   "plusRecent": "2024-05",
+   "communes": 28,
+   "nom": "Seine-Maritime",
+   "topCommunes": [
+    [
+     "Dieppe",
+     3
+    ],
+    [
+     "Rouen",
+     3
+    ],
+    [
+     "Le Havre",
+     2
+    ],
+    [
+     "Aumale",
+     1
+    ],
+    [
+     "Canteleu",
+     1
+    ]
+   ]
+  },
+  "77": {
+   "total": 35,
+   "types": {
+    "ETF": 9,
+    "ETD": 9,
+    "ETT": 13,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 2,
+    "ETPN": 2
+   },
+   "vma": {
+    "70": 2,
+    "80": 10,
+    "90": 13,
+    "110": 4,
+    "130": 2
+   },
+   "recents": 12,
+   "plusAncien": "2006-07",
+   "plusRecent": "2025-10",
+   "communes": 27,
+   "nom": "Seine-et-Marne",
+   "topCommunes": [
+    [
+     "Lieusaint",
+     3
+    ],
+    [
+     "Fontainebleau",
+     2
+    ],
+    [
+     "Lognes",
+     2
+    ],
+    [
+     "Perthes",
+     2
+    ],
+    [
+     "Pontault-Combault",
+     2
+    ]
+   ]
+  },
+  "78": {
+   "total": 88,
+   "types": {
+    "ETF": 37,
+    "ETD": 13,
+    "ETT": 21,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 17,
+    "ETPN": 0
+   },
+   "vma": {
+    "30": 1,
+    "50": 20,
+    "70": 32,
+    "80": 7,
+    "90": 7
+   },
+   "recents": 12,
+   "plusAncien": "2007-02",
+   "plusRecent": "2025-12",
+   "communes": 39,
+   "nom": "Yvelines",
+   "topCommunes": [
+    [
+     "Versailles",
+     15
+    ],
+    [
+     "La Celle-Saint-Cloud",
+     6
+    ],
+    [
+     "Viroflay",
+     6
+    ],
+    [
+     "Jouy-en-Josas",
+     5
+    ],
+    [
+     "Vélizy-Villacoublay",
+     4
+    ]
+   ]
+  },
+  "79": {
+   "total": 31,
+   "types": {
+    "ETF": 6,
+    "ETD": 6,
+    "ETT": 13,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 5,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 5,
+    "80": 10,
+    "90": 5,
+    "110": 1,
+    "130": 1
+   },
+   "recents": 5,
+   "plusAncien": "2005-08",
+   "plusRecent": "2024-05",
+   "communes": 25,
+   "nom": "Deux-Sèvres",
+   "topCommunes": [
+    [
+     "Niort",
+     4
+    ],
+    [
+     "Chauray",
+     2
+    ],
+    [
+     "Maisonnay",
+     2
+    ],
+    [
+     "Thouars",
+     2
+    ],
+    [
+     "Bressuire",
+     1
+    ]
+   ]
+  },
+  "80": {
+   "total": 40,
+   "types": {
+    "ETF": 3,
+    "ETD": 10,
+    "ETT": 15,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 12,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 2,
+    "80": 19,
+    "90": 5,
+    "110": 2
+   },
+   "recents": 8,
+   "plusAncien": "2004-03",
+   "plusRecent": "2025-12",
+   "communes": 30,
+   "nom": "Somme",
+   "topCommunes": [
+    [
+     "Amiens",
+     10
+    ],
+    [
+     "Rivery",
+     2
+    ],
+    [
+     "Abbeville",
+     1
+    ],
+    [
+     "Airaines",
+     1
+    ],
+    [
+     "Aubigny",
+     1
+    ]
+   ]
+  },
+  "81": {
+   "total": 29,
+   "types": {
+    "ETF": 6,
+    "ETD": 5,
+    "ETT": 18,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 5,
+    "80": 11,
+    "90": 13
+   },
+   "recents": 1,
+   "plusAncien": "2005-04",
+   "plusRecent": "2023-07",
+   "communes": 24,
+   "nom": "Tarn",
+   "topCommunes": [
+    [
+     "Lisle-sur-Tarn",
+     3
+    ],
+    [
+     "Albi",
+     2
+    ],
+    [
+     "Castres",
+     2
+    ],
+    [
+     "Lescure-d'Albigeois",
+     2
+    ],
+    [
+     "Bellegarde-Marsal",
+     1
+    ]
+   ]
+  },
+  "82": {
+   "total": 37,
+   "types": {
+    "ETF": 8,
+    "ETD": 3,
+    "ETT": 20,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 6,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "80": 23,
+    "90": 7
+   },
+   "recents": 1,
+   "plusAncien": "2005-07",
+   "plusRecent": "2024-04",
+   "communes": 23,
+   "nom": "Tarn-et-Garonne",
+   "topCommunes": [
+    [
+     "Montauban",
+     10
+    ],
+    [
+     "Castelsarrasin",
+     2
+    ],
+    [
+     "Moissac",
+     2
+    ],
+    [
+     "Montech",
+     2
+    ],
+    [
+     "Saint-Nauphary",
+     2
+    ]
+   ]
+  },
+  "83": {
+   "total": 48,
+   "types": {
+    "ETF": 5,
+    "ETD": 5,
+    "ETT": 29,
+    "ETU": 0,
+    "ETVM": 4,
+    "ETFR": 5,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 12,
+    "80": 4,
+    "90": 12,
+    "130": 2
+   },
+   "recents": 8,
+   "plusAncien": "2005-07",
+   "plusRecent": "2025-03",
+   "communes": 27,
+   "nom": "Var",
+   "topCommunes": [
+    [
+     "Toulon",
+     8
+    ],
+    [
+     "Fréjus",
+     5
+    ],
+    [
+     "Hyères",
+     3
+    ],
+    [
+     "La Garde",
+     2
+    ],
+    [
+     "Le Cannet-des-Maures",
+     2
+    ]
+   ]
+  },
+  "84": {
+   "total": 38,
+   "types": {
+    "ETF": 5,
+    "ETD": 3,
+    "ETT": 24,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 6,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 3,
+    "80": 12,
+    "90": 4,
+    "130": 1
+   },
+   "recents": 4,
+   "plusAncien": "2005-02",
+   "plusRecent": "2025-02",
+   "communes": 16,
+   "nom": "Vaucluse",
+   "topCommunes": [
+    [
+     "Avignon",
+     14
+    ],
+    [
+     "Cavaillon",
+     3
+    ],
+    [
+     "Orange",
+     3
+    ],
+    [
+     "Châteauneuf-de-Gadagne",
+     2
+    ],
+    [
+     "Cheval-Blanc",
+     2
+    ]
+   ]
+  },
+  "85": {
+   "total": 29,
+   "types": {
+    "ETF": 8,
+    "ETD": 2,
+    "ETT": 18,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 1,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 2,
+    "80": 24,
+    "90": 1
+   },
+   "recents": 1,
+   "plusAncien": "2005-07",
+   "plusRecent": "2023-09",
+   "communes": 25,
+   "nom": "Vendée",
+   "topCommunes": [
+    [
+     "Bellevigny",
+     3
+    ],
+    [
+     "Challans",
+     2
+    ],
+    [
+     "La Roche-sur-Yon",
+     2
+    ],
+    [
+     "Aizenay",
+     1
+    ],
+    [
+     "Angles",
+     1
+    ]
+   ]
+  },
+  "86": {
+   "total": 28,
+   "types": {
+    "ETF": 9,
+    "ETD": 5,
+    "ETT": 10,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 4,
+    "ETPN": 0
+   },
+   "vma": {
+    "30": 1,
+    "50": 2,
+    "70": 6,
+    "80": 9,
+    "90": 6
+   },
+   "recents": 6,
+   "plusAncien": "2003-11",
+   "plusRecent": "2025-08",
+   "communes": 22,
+   "nom": "Vienne",
+   "topCommunes": [
+    [
+     "Poitiers",
+     4
+    ],
+    [
+     "Châtellerault",
+     2
+    ],
+    [
+     "Cissé",
+     2
+    ],
+    [
+     "Saint-Benoît",
+     2
+    ],
+    [
+     "Ayron",
+     1
+    ]
+   ]
+  },
+  "87": {
+   "total": 28,
+   "types": {
+    "ETF": 6,
+    "ETD": 4,
+    "ETT": 15,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 0,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 10,
+    "70": 5,
+    "80": 7,
+    "90": 3,
+    "110": 1
+   },
+   "recents": 7,
+   "plusAncien": "2005-01",
+   "plusRecent": "2025-12",
+   "communes": 16,
+   "nom": "Haute-Vienne",
+   "topCommunes": [
+    [
+     "Limoges",
+     6
+    ],
+    [
+     "Saint-Bonnet-de-Bellac",
+     3
+    ],
+    [
+     "Saint-Sornin-Leulac",
+     3
+    ],
+    [
+     "Isle",
+     2
+    ],
+    [
+     "Peyrilhac",
+     2
+    ]
+   ]
+  },
+  "88": {
+   "total": 20,
+   "types": {
+    "ETF": 5,
+    "ETD": 8,
+    "ETT": 7,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 2,
+    "80": 11,
+    "90": 5
+   },
+   "recents": 1,
+   "plusAncien": "2005-01",
+   "plusRecent": "2024-09",
+   "communes": 16,
+   "nom": "Vosges",
+   "topCommunes": [
+    [
+     "Épinal",
+     2
+    ],
+    [
+     "Gérardmer",
+     2
+    ],
+    [
+     "Vincey",
+     2
+    ],
+    [
+     "Vrécourt",
+     2
+    ],
+    [
+     "Bussang",
+     1
+    ]
+   ]
+  },
+  "89": {
+   "total": 32,
+   "types": {
+    "ETF": 3,
+    "ETD": 6,
+    "ETT": 21,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 4,
+    "70": 3,
+    "80": 5,
+    "90": 18
+   },
+   "recents": 7,
+   "plusAncien": "2005-06",
+   "plusRecent": "2024-06",
+   "communes": 27,
+   "nom": "Yonne",
+   "topCommunes": [
+    [
+     "Auxerre",
+     4
+    ],
+    [
+     "Malay-le-Petit",
+     2
+    ],
+    [
+     "Vergigny",
+     2
+    ],
+    [
+     "Béon",
+     1
+    ],
+    [
+     "Champlay",
+     1
+    ]
+   ]
+  },
+  "90": {
+   "total": 14,
+   "types": {
+    "ETF": 2,
+    "ETD": 2,
+    "ETT": 3,
+    "ETU": 5,
+    "ETVM": 0,
+    "ETFR": 2,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 7,
+    "70": 1,
+    "80": 3
+   },
+   "recents": 5,
+   "plusAncien": "2005-09",
+   "plusRecent": "2024-01",
+   "communes": 11,
+   "nom": "Territoire de Belfort",
+   "topCommunes": [
+    [
+     "Belfort",
+     3
+    ],
+    [
+     "Argiésans",
+     2
+    ],
+    [
+     "Andelnans",
+     1
+    ],
+    [
+     "Bourogne",
+     1
+    ],
+    [
+     "Chaux",
+     1
+    ]
+   ]
+  },
+  "91": {
+   "total": 49,
+   "types": {
+    "ETF": 10,
+    "ETD": 14,
+    "ETT": 6,
+    "ETU": 0,
+    "ETVM": 2,
+    "ETFR": 13,
+    "ETPN": 4
+   },
+   "vma": {
+    "50": 3,
+    "70": 9,
+    "80": 9,
+    "90": 7,
+    "110": 4
+   },
+   "recents": 6,
+   "plusAncien": "2003-10",
+   "plusRecent": "2025-11",
+   "communes": 36,
+   "nom": "Essonne",
+   "topCommunes": [
+    [
+     "Bièvres",
+     3
+    ],
+    [
+     "Corbeil-Essonnes",
+     3
+    ],
+    [
+     "Linas",
+     3
+    ],
+    [
+     "Ballancourt-sur-Essonne",
+     2
+    ],
+    [
+     "Breuillet",
+     2
+    ]
+   ]
+  },
+  "92": {
+   "total": 47,
+   "types": {
+    "ETF": 33,
+    "ETD": 1,
+    "ETT": 3,
+    "ETU": 0,
+    "ETVM": 2,
+    "ETFR": 8,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 14,
+    "70": 22,
+    "90": 2
+   },
+   "recents": 3,
+   "plusAncien": "2003-11",
+   "plusRecent": "2025-09",
+   "communes": 20,
+   "nom": "Hauts-de-Seine",
+   "topCommunes": [
+    [
+     "Rueil-Malmaison",
+     9
+    ],
+    [
+     "Vaucresson",
+     6
+    ],
+    [
+     "Boulogne-Billancourt",
+     5
+    ],
+    [
+     "Puteaux",
+     4
+    ],
+    [
+     "Courbevoie",
+     3
+    ]
+   ]
+  },
+  "93": {
+   "total": 31,
+   "types": {
+    "ETF": 4,
+    "ETD": 10,
+    "ETT": 15,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 2,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 12,
+    "70": 3,
+    "90": 10
+   },
+   "recents": 15,
+   "plusAncien": "2004-12",
+   "plusRecent": "2025-10",
+   "communes": 19,
+   "nom": "Seine-Saint-Denis",
+   "topCommunes": [
+    [
+     "Saint-Denis",
+     4
+    ],
+    [
+     "La Courneuve",
+     3
+    ],
+    [
+     "Villepinte",
+     3
+    ],
+    [
+     "Aubervilliers",
+     2
+    ],
+    [
+     "Drancy",
+     2
+    ]
+   ]
+  },
+  "94": {
+   "total": 26,
+   "types": {
+    "ETF": 11,
+    "ETD": 1,
+    "ETT": 4,
+    "ETU": 1,
+    "ETVM": 0,
+    "ETFR": 9,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 6,
+    "70": 3,
+    "80": 1,
+    "90": 6
+   },
+   "recents": 4,
+   "plusAncien": "2003-12",
+   "plusRecent": "2025-02",
+   "communes": 18,
+   "nom": "Val-de-Marne",
+   "topCommunes": [
+    [
+     "Créteil",
+     4
+    ],
+    [
+     "Champigny-sur-Marne",
+     3
+    ],
+    [
+     "Arcueil",
+     2
+    ],
+    [
+     "Maisons-Alfort",
+     2
+    ],
+    [
+     "Villeneuve-Saint-Georges",
+     2
+    ]
+   ]
+  },
+  "95": {
+   "total": 57,
+   "types": {
+    "ETF": 8,
+    "ETD": 9,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 28,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 3,
+    "70": 1,
+    "80": 11,
+    "90": 11,
+    "110": 1
+   },
+   "recents": 6,
+   "plusAncien": "2004-08",
+   "plusRecent": "2025-10",
+   "communes": 34,
+   "nom": "Val-d'Oise",
+   "topCommunes": [
+    [
+     "Argenteuil",
+     5
+    ],
+    [
+     "Cergy",
+     5
+    ],
+    [
+     "Montigny-lès-Cormeilles",
+     5
+    ],
+    [
+     "Éragny-sur-Oise",
+     3
+    ],
+    [
+     "Jouy-le-Moutier",
+     3
+    ]
+   ]
+  },
+  "971": {
+   "total": 30,
+   "types": {
+    "ETF": 4,
+    "ETD": 0,
+    "ETT": 26,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 9,
+    "70": 7,
+    "80": 6,
+    "90": 6,
+    "110": 2
+   },
+   "recents": 0,
+   "plusAncien": "2005-09",
+   "plusRecent": "2021-10",
+   "communes": 15,
+   "nom": "Guadeloupe",
+   "topCommunes": [
+    [
+     "Les Abymes",
+     5
+    ],
+    [
+     "Le Gosier",
+     4
+    ],
+    [
+     "Baie-Mahault",
+     3
+    ],
+    [
+     "Petit-Bourg",
+     3
+    ],
+    [
+     "Saint-François",
+     3
+    ]
+   ]
+  },
+  "972": {
+   "total": 41,
+   "types": {
+    "ETF": 0,
+    "ETD": 0,
+    "ETT": 41,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 10,
+    "60": 2,
+    "70": 14,
+    "80": 5,
+    "90": 10
+   },
+   "recents": 19,
+   "plusAncien": "2020-12",
+   "plusRecent": "2024-05",
+   "communes": 19,
+   "nom": "Martinique",
+   "topCommunes": [
+    [
+     "Le Lamentin",
+     10
+    ],
+    [
+     "Fort-de-France",
+     4
+    ],
+    [
+     "Le Robert",
+     4
+    ],
+    [
+     "La Trinité",
+     3
+    ],
+    [
+     "Saint-Pierre",
+     3
+    ]
+   ]
+  },
+  "973": {
+   "total": 8,
+   "types": {
+    "ETF": 8,
+    "ETD": 0,
+    "ETT": 0,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 2,
+    "80": 1,
+    "90": 1
+   },
+   "recents": 0,
+   "plusAncien": "2007-08",
+   "plusRecent": "2014-05",
+   "communes": 4,
+   "nom": "Guyane",
+   "topCommunes": [
+    [
+     "Macouria",
+     3
+    ],
+    [
+     "Cayenne",
+     2
+    ],
+    [
+     "Saint-Laurent-du-Maroni",
+     2
+    ],
+    [
+     "Matoury",
+     1
+    ]
+   ]
+  },
+  "974": {
+   "total": 24,
+   "types": {
+    "ETF": 0,
+    "ETD": 0,
+    "ETT": 24,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 6,
+    "70": 5,
+    "80": 1,
+    "90": 4,
+    "110": 8
+   },
+   "recents": 5,
+   "plusAncien": "2020-12",
+   "plusRecent": "2025-10",
+   "communes": 11,
+   "nom": "La Réunion",
+   "topCommunes": [
+    [
+     "Saint-Denis",
+     6
+    ],
+    [
+     "Saint-Pierre",
+     5
+    ],
+    [
+     "Saint-André",
+     3
+    ],
+    [
+     "Saint-Leu",
+     2
+    ],
+    [
+     "Saint-Paul",
+     2
+    ]
+   ]
+  },
+  "976": {
+   "total": 0,
+   "types": {
+    "ETF": 0,
+    "ETD": 0,
+    "ETT": 0,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {},
+   "recents": 0,
+   "plusAncien": "9999",
+   "plusRecent": "0000",
+   "communes": 0,
+   "nom": "Mayotte",
+   "topCommunes": []
+  },
+  "01": {
+   "total": 29,
+   "types": {
+    "ETF": 1,
+    "ETD": 2,
+    "ETT": 26,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 5,
+    "70": 3,
+    "80": 19,
+    "90": 1,
+    "110": 1
+   },
+   "recents": 3,
+   "plusAncien": "2006-06",
+   "plusRecent": "2025-01",
+   "communes": 27,
+   "nom": "Ain",
+   "topCommunes": [
+    [
+     "Les Neyrolles",
+     2
+    ],
+    [
+     "Pérouges",
+     2
+    ],
+    [
+     "Ambérieu-en-Bugey",
+     1
+    ],
+    [
+     "Bény",
+     1
+    ],
+    [
+     "Briord",
+     1
+    ]
+   ]
+  },
+  "02": {
+   "total": 26,
+   "types": {
+    "ETF": 3,
+    "ETD": 3,
+    "ETT": 20,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 6,
+    "80": 16
+   },
+   "recents": 8,
+   "plusAncien": "2004-10",
+   "plusRecent": "2024-07",
+   "communes": 22,
+   "nom": "Aisne",
+   "topCommunes": [
+    [
+     "Belleu",
+     2
+    ],
+    [
+     "Festieux",
+     2
+    ],
+    [
+     "Laon",
+     2
+    ],
+    [
+     "Saint-Quentin",
+     2
+    ],
+    [
+     "Bazoches-et-Saint-Thibaut",
+     1
+    ]
+   ]
+  },
+  "03": {
+   "total": 18,
+   "types": {
+    "ETF": 5,
+    "ETD": 1,
+    "ETT": 12,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "70": 1,
+    "80": 2,
+    "90": 10
+   },
+   "recents": 2,
+   "plusAncien": "2004-09",
+   "plusRecent": "2024-05",
+   "communes": 17,
+   "nom": "Allier",
+   "topCommunes": [
+    [
+     "Montluçon",
+     2
+    ],
+    [
+     "Abrest",
+     1
+    ],
+    [
+     "Bessay-sur-Allier",
+     1
+    ],
+    [
+     "Bost",
+     1
+    ],
+    [
+     "Charmeil",
+     1
+    ]
+   ]
+  },
+  "04": {
+   "total": 14,
+   "types": {
+    "ETF": 5,
+    "ETD": 0,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 2,
+    "80": 11
+   },
+   "recents": 0,
+   "plusAncien": "2004-11",
+   "plusRecent": "2022-10",
+   "communes": 13,
+   "nom": "Alpes-de-Haute-Provence",
+   "topCommunes": [
+    [
+     "Villeneuve",
+     2
+    ],
+    [
+     "Aiglun",
+     1
+    ],
+    [
+     "Aubignosc",
+     1
+    ],
+    [
+     "Céreste-en-Luberon",
+     1
+    ],
+    [
+     "Digne-les-Bains",
+     1
+    ]
+   ]
+  },
+  "05": {
+   "total": 15,
+   "types": {
+    "ETF": 5,
+    "ETD": 0,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "70": 3,
+    "80": 7,
+    "90": 5
+   },
+   "recents": 1,
+   "plusAncien": "2005-08",
+   "plusRecent": "2023-10",
+   "communes": 14,
+   "nom": "Hautes-Alpes",
+   "topCommunes": [
+    [
+     "Gap",
+     2
+    ],
+    [
+     "Aspremont",
+     1
+    ],
+    [
+     "Embrun",
+     1
+    ],
+    [
+     "Guillestre",
+     1
+    ],
+    [
+     "La Roche-des-Arnauds",
+     1
+    ]
+   ]
+  },
+  "06": {
+   "total": 49,
+   "types": {
+    "ETF": 10,
+    "ETD": 4,
+    "ETT": 27,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 7,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 21,
+    "70": 8,
+    "80": 1,
+    "90": 2,
+    "110": 1
+   },
+   "recents": 10,
+   "plusAncien": "2004-05",
+   "plusRecent": "2024-07",
+   "communes": 15,
+   "nom": "Alpes-Maritimes",
+   "topCommunes": [
+    [
+     "Nice",
+     15
+    ],
+    [
+     "Cagnes-sur-Mer",
+     6
+    ],
+    [
+     "Cannes",
+     6
+    ],
+    [
+     "Roquebrune-Cap-Martin",
+     5
+    ],
+    [
+     "Saint-Laurent-du-Var",
+     4
+    ]
+   ]
+  },
+  "07": {
+   "total": 17,
+   "types": {
+    "ETF": 2,
+    "ETD": 0,
+    "ETT": 13,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 2
+   },
+   "vma": {
+    "50": 6,
+    "70": 4,
+    "90": 5
+   },
+   "recents": 3,
+   "plusAncien": "2005-02",
+   "plusRecent": "2023-08",
+   "communes": 15,
+   "nom": "Ardèche",
+   "topCommunes": [
+    [
+     "Chomérac",
+     2
+    ],
+    [
+     "Meysse",
+     2
+    ],
+    [
+     "Aubenas",
+     1
+    ],
+    [
+     "Aubignas",
+     1
+    ],
+    [
+     "Coux",
+     1
+    ]
+   ]
+  },
+  "08": {
+   "total": 18,
+   "types": {
+    "ETF": 1,
+    "ETD": 6,
+    "ETT": 11,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 3,
+    "80": 14,
+    "90": 1
+   },
+   "recents": 2,
+   "plusAncien": "2005-03",
+   "plusRecent": "2025-08",
+   "communes": 16,
+   "nom": "Ardennes",
+   "topCommunes": [
+    [
+     "Les Mazures",
+     2
+    ],
+    [
+     "Rethel",
+     2
+    ],
+    [
+     "Auvillers-les-Forges",
+     1
+    ],
+    [
+     "Charleville-Mézières",
+     1
+    ],
+    [
+     "Cheveuges",
+     1
+    ]
+   ]
+  },
+  "09": {
+   "total": 14,
+   "types": {
+    "ETF": 2,
+    "ETD": 1,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 1,
+    "ETFR": 1,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 2,
+    "70": 2,
+    "80": 7,
+    "90": 1,
+    "110": 1
+   },
+   "recents": 3,
+   "plusAncien": "2007-12",
+   "plusRecent": "2024-11",
+   "communes": 14,
+   "nom": "Ariège",
+   "topCommunes": [
+    [
+     "Crampagna",
+     1
+    ],
+    [
+     "Foix",
+     1
+    ],
+    [
+     "Lavelanet",
+     1
+    ],
+    [
+     "Le Vernet",
+     1
+    ],
+    [
+     "Lorp-Sentaraille",
+     1
+    ]
+   ]
+  },
+  "2A": {
+   "total": 9,
+   "types": {
+    "ETF": 0,
+    "ETD": 0,
+    "ETT": 9,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 4,
+    "70": 3,
+    "80": 2
+   },
+   "recents": 2,
+   "plusAncien": "2021-06",
+   "plusRecent": "2025-06",
+   "communes": 7,
+   "nom": "Corse-du-Sud",
+   "topCommunes": [
+    [
+     "Ajaccio",
+     3
+    ],
+    [
+     "Bonifacio",
+     1
+    ],
+    [
+     "Figari",
+     1
+    ],
+    [
+     "Porto-Vecchio",
+     1
+    ],
+    [
+     "Propriano",
+     1
+    ]
+   ]
+  },
+  "2B": {
+   "total": 12,
+   "types": {
+    "ETF": 11,
+    "ETD": 0,
+    "ETT": 1,
+    "ETU": 0,
+    "ETVM": 0,
+    "ETFR": 0,
+    "ETPN": 0
+   },
+   "vma": {
+    "50": 1,
+    "70": 8,
+    "80": 3
+   },
+   "recents": 0,
+   "plusAncien": "2005-04",
+   "plusRecent": "2022-02",
+   "communes": 9,
+   "nom": "Haute-Corse",
+   "topCommunes": [
+    [
+     "San-Giuliano",
+     2
+    ],
+    [
+     "Sorbo-Ocagnano",
+     2
+    ],
+    [
+     "Volpajola",
+     2
+    ],
+    [
+     "Bastia",
+     1
+    ],
+    [
+     "Biguglia",
+     1
+    ]
+   ]
+  }
+ }
+}

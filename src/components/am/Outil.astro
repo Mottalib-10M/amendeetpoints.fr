@@ -1,0 +1,18 @@
+---
+/** Aiguillage vers l'outil principal d'une page (src/content : `tool` et `outil`). */
+import ExcesTool from './ExcesTool';
+import InfractionTool from './InfractionTool';
+import PointsTool from './PointsTool';
+import RadarsTool from './RadarsTool';
+import DelaisTool from './DelaisTool';
+import { BUILD_TODAY } from '../../lib/today';
+import type { Tool } from '../../lib/guide-types';
+interface Props { tool: Tool; lang: 'fr' | 'en'; id: string; opts?: Record<string, unknown>; methodHref?: string }
+const { tool, lang, id, opts = {}, methodHref } = Astro.props;
+const o = opts as any;
+---
+{tool === 'exces' && <ExcesTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'infraction' && <InfractionTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'points' && <PointsTool client:load lang={lang} id={id} today={BUILD_TODAY} methodHref={methodHref} {...o} />}
+{tool === 'radars' && <RadarsTool client:load lang={lang} id={id} methodHref={methodHref} {...o} />}
+{tool === 'delais' && <DelaisTool client:load lang={lang} id={id} today={BUILD_TODAY} methodHref={methodHref} {...o} />}

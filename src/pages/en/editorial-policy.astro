@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy – ${SITE_NAMES[lang]}`} description="Where the scale of fines and points and the camera list published here come from, who answers for them, how often they are reread, and what happens when an error is reported." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial and corrections policy</h1>
+    <p>A wrong amount makes people pay too much, or miss the reduced-fine window; a wrong recovery time makes a driver believe their licence is fine. Here is where our figures come from and what we do when one of them is wrong.</p>
+    <h2>Responsibility</h2><p>{AUTHOR_NAME} answers for every amount, number of points, deadline and calculation in the tools. A figure that does not match its source can be reported to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Primary sources only</h2>
+    <ul>
+      <li><strong>the Highway Code and the Code of Criminal Procedure</strong>, in their versions in force on Légifrance, and the decrees, orders and laws amending them;</li>
+      <li><strong>the Service Public pages</strong> on fixed fines, the points scale, getting points back and speed limits;</li>
+      <li><strong>the “Liste des radars fixes en France” file</strong> of the Interior Ministry, on data.gouv.fr (Licence Ouverte 2.0);</li>
+      <li><strong>the administrative boundaries API</strong> to attach each camera to its town.</li>
+    </ul>
+    <p>No figure is taken from a course seller, law firm, insurer or forum. A penalty we could not check against a text in force is not published.</p>
+    <h2>The maximum penalty, never a forecast</h2><p>For a criminal offence or a suspension we give the most the text allows. We do not predict what a judge or prefect will decide and promise no outcome for a challenge.</p>
+    <h2>Checks before publication</h2><p>The method’s examples, the bounds of every band of the scale and the payment deadlines are tests; an update that fails them is blocked. A camera file of fewer than 2,000 rows is rejected.</p>
+    <h2>Update schedule</h2><p>Cameras: every week. Scale: whenever a cited text changes; the texts are reread at least once a year. The reread date is shown on every page.</p>
+    <h2>Handling errors</h2>
+    <ol><li>Checked against the text in force.</li><li>Parameters or code corrected, a test added.</li><li>New date on the pages concerned.</li></ol>
+    <h2>Independence</h2><p>No commercial link with any course provider, lawyer, driving school or insurer. No sponsored links in the texts. Any commercial relationship would be stated plainly.</p>
+    <p>See also the <a href={route('method', lang)}>method</a>. Version: {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

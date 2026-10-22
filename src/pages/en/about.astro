@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { personSchema, organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate, formatNumber } from '../../lib/format';
+import { P } from '../../lib/engine/params';
+import S from '../../data/radars/stats.json';
+const lang = 'en';
+---
+<PageLayout title="Amende et Points, about us: who works out French fines" description="Who publishes Amende et Points, why a neutral calculator of French fines, where the penalty scale and the 3,309 cameras come from, how to report an error." lang={lang} jsonLd={[personSchema(lang), organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">About Amende et Points</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>Amende et Points is published by Radif Partners. It answers the question raised by a French penalty notice, or a flash at the roadside: how much will I pay, how many points will I lose, and when will I get them back?</p>
+    <h2>Why this site exists</h2>
+    <p>On those questions, the top results are official pages that set out the rules without doing the sum, and sites that sell points-recovery courses, legal services or insurance, with a table to read for yourself between two adverts. Mistakes are common: the same small excess quoted at €68 in the text and €135 in the FAQ of a single page, or scales that still ignore the 50 km/h-over criminal offence and the law of 18 August 2026. This site does better than the top Google result because it works out your exact penalty (recorded speed after the camera margin, reduced, standard or increased fine, points, the offence beyond 50 km/h over, up to date with the law of 18 August 2026) where the top result gives a table to read yourself between adverts for paid courses, and because it attaches each of the {formatNumber(S.meta.radars, 0, 'en')} fixed cameras in the Interior Ministry’s file to its département and its limit.</p>
+    <h2>Where the figures come from</h2>
+    <p>The scale comes from the texts themselves: the Highway Code (articles R413-14, L413-1, L223-1 to L223-6, L224-2), the Code of Criminal Procedure (articles R49-9, 529-7 onwards) and the order of 4 June 2009 on speed cameras, reread on Légifrance on {displayDate(P.retrieved_at, 'en-GB')} and cross-checked with the Service Public pages. The cameras come from the Interior Ministry’s public file on data.gouv.fr, reread every week. Everything is set out in the <a href={route('method', lang)}>method</a>.</p>
+    <h2>What we are not</h2>
+    <p>Radif Partners is not the ANTAI, the Sécurité routière or any government service, nor a law firm or a course provider. We sell nothing, take no commission, recommend no provider and ask for no contact details. Only the notice you receive, or a court decision, is binding.</p>
+    <h2>Funding and data</h2><p>The site is free, with no sign-up. Calculations run in your browser: the speed or dates you enter are sent nowhere. If it ever shows advertising, it will never sit above the tool, will not sell courses or legal defence, and will not be presented as a recommendation.</p>
+    <h2>Why in English</h2><p>Every page exists in French and English, for foreign drivers caught on camera in France and for expats discovering the points licence: the French words on the notice (vitesse retenue, amende minorée, désignation) are explained.</p>
+    <h2>Write to us</h2><p>An amount that does not match your notice, a camera that has gone, a text that has changed: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. See also the <a href={route('editorial', lang)}>editorial policy</a> and the <a href={route('terms', lang)}>legal notice</a>.</p>
+    <p class="text-sm text-navy-600">Texts reread on <time datetime={P.retrieved_at}>{displayDate(P.retrieved_at, 'en-GB')}</time> · camera file of <time datetime={S.meta.fichier}>{displayDate(S.meta.fichier, 'en-GB')}</time>.</p>
+  </div>
+</PageLayout>
