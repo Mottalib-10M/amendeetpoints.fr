@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://fr-amendes-points.example";
+export const SITE_URL = "https://amendeetpoints.fr";
 export const SITE_NAMES: Record<string, string> = {"fr": "Amende et Points", "en": "Amende et Points"};
 export const LANG_TAGS: Record<string, string> = {"fr": "fr-FR", "en": "en-FR"};
 export const OG_LOCALES: Record<string, string> = {"fr": "fr_FR", "en": "en_GB"};
@@ -17,7 +17,7 @@ export const AUTHOR_DESC: Record<string, string> = {"fr": "Radif Partners appliq
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"fr": ["Barème des excès de vitesse (article R413-14 du Code de la route)", "Délit de grand excès de vitesse (article L413-1)", "Marge technique des radars fixes et embarqués", "Permis à points, récupération et stage", "Amende minorée, forfaitaire et majorée", "Radars automatiques fixes par département"], "en": ["French speeding penalty scale (Highway Code article R413-14)", "The 50 km/h-over speeding offence (article L413-1)", "Technical margin of fixed and in-car speed cameras", "French points licence and point recovery", "Reduced, standard and increased fixed fines", "Fixed speed cameras by French département"]};
-export const CONTACT_EMAIL = "contact@fr-amendes-points.example";
+export const CONTACT_EMAIL = "contact@amendeetpoints.fr";
 export const THEME_COLOR = '#A3271D';
 export const LOGO_SYMBOL = 'km/h';
 export const BING_VERIFY_CODE = '';

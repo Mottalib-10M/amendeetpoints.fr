@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://fr-amendes-points.example/sitemap-index.xml
+Sitemap: https://amendeetpoints.fr/sitemap-index.xml
